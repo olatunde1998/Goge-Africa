@@ -12,7 +12,6 @@ const AdvertContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  // border: 2px solid blue;
   @media (min-width: 768px) {
     display: flex;
   }

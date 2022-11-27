@@ -3,7 +3,6 @@ import { Typography } from "components/Typography";
 import styled from "styled-components";
 
 const AdvertDetailsContainer = styled.div`
-    // border: 2px solid blue;
     text-align: left;
     padding-left: .8rem;
     @media (min-width: 768px) {
