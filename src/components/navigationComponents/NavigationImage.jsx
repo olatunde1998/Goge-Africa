@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const NavImageWrapper = styled.div`
     max-width: 8rem;
-    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 10px;
     @media (min-width: 768px){
       margin: 0;
     }`;

@@ -7,7 +7,8 @@ const NavigationListContainer = styled.div`
       justify-content: space-between;
       vertical-align: center;
       padding: 0 .5rem;
-      max-width: 600px;
+      max-width: 400px;
+
     }
 `;
 
