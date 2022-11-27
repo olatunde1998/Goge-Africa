@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import Description from 'components/loginComponent/rightContainer/Description'
 import ImageComponent from 'components/loginComponent/rightContainer/ImageComponent';
-import NextBtn from 'assets/img/next.png';
-import PreviousBtn from "assets/img/prev.png";
+// import NextBtn from 'assets/img/next.png';
+// import PreviousBtn from "assets/img/prev.png";
 
 
 const RightContentWrapper = styled.div`
@@ -24,8 +24,8 @@ function RightContent() {
         <ImageComponent />
         <Description />
         <ImageContainer>
-            <ImageComponent src={PreviousBtn}/>
-            <ImageComponent src={NextBtn}/>
+            <ImageComponent src={`${process.env.PUBLIC_URL}/prev.png`}/>
+            <ImageComponent src={`${process.env.PUBLIC_URL}/next.png`}/>
         </ImageContainer>
         
     </RightContentWrapper>

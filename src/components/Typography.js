@@ -12,14 +12,15 @@ const headings = (theme) => `
     color: ${theme.colors.primary};
 `;
 const bodyLarge = (theme) => `
-    font-size: ${theme.fontSizes.h3};
-    font-weight: ${theme.fontWeights.regular}
+    font-size: ${theme.fontSizes.h1};
+    font-weight: ${theme.fontWeights.bold};
+    color: white;
     
 `;
 const bodyMedium = (theme) => `
     font-weight: ${theme.fontWeights.regular};
-    font-size: ${theme.fontSizes.h3}
-    color: ${theme.colors.secondary}
+    font-size: ${theme.fontSizes.h3};
+    color: ${theme.colors.secondary};
 
 `;
 const bodySmall = (theme) => `

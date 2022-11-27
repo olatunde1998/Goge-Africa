@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BrandLogo from "assets/img/Logo.png"
+// import BrandLogo from "assets/img/Logo.png"
 
 const ImageWrapper = styled.img`
     max-width: 100%;
@@ -11,7 +11,7 @@ const ImageWrapper = styled.img`
 
 function ImageComponent(){
     return(
-        <ImageWrapper src={BrandLogo} alt="company logo"/>
+        <ImageWrapper src={`${process.env.PUBLIC_URL}/Logo.png`} alt="company logo"/>
     )
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import AdvertDetails from "components/advertComponents/AdvertDetails";
-import AdvertImage from "assets/img/advertImages.png";
 import ImageComponent from "components/loginComponent/rightContainer/ImageComponent";
 import styled from "styled-components";
 
@@ -23,7 +22,7 @@ function AdvertComponent() {
     <AdvertContainer>
       <AdvertDetails />
       <ImageContainer>
-        <ImageComponent src={AdvertImage} />
+        <ImageComponent src={`${process.env.PUBLIC_URL}/assets/img/advertImages.png`} />
       </ImageContainer>
     </AdvertContainer>
   );

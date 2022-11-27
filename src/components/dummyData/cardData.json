@@ -1,0 +1,30 @@
+[
+{
+    "id": 1,
+    "imgURL": "assets/img/card-image1.png",
+    "description":"Lorem ipsum dolor sit amet, magna habemus his ad, qui minum voluptaria In. Ad mei modus quodsi complectitur",
+    "date": "19 Augs, 2019 by Tommy Lang",
+    "headings":"Have To Have A Good Music Listening Ear"
+},   
+{
+    "id": 2,
+    "imgURL": "assets/img/card-image2.png",
+    "description":"Lorem ipsum dolor sit amet, magna habemus his ad, qui minum voluptaria In. Ad mei modus quodsi complectitur",
+    "date": "19 Augs, 2019 by Tommy Lang",
+    "headings":"Have To Have A Good Music Listening Ear"
+},
+{
+    "id": 3,
+    "imgURL": "assets/img/card-image3.png",
+    "description":"Lorem ipsum dolor sit amet, magna habemus his ad, qui minum voluptaria In. Ad mei modus quodsi complectitur",
+    "date": "19 Augs, 2019 by Tommy Lang",
+    "headings":"Have To Have A Good Music Listening Ear"
+},
+{
+    "id": 4,
+    "imgURL": "assets/img/card-image2.png",
+    "description":"Lorem ipsum dolor sit amet, magna habemus his ad, qui minum voluptaria In. Ad mei modus quodsi complectitur",
+    "date": "19 Augs, 2019 by Tommy Lang",
+    "headings":"Have To Have A Good Music Listening Ear"
+}
+]

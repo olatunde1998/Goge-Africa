@@ -12,6 +12,10 @@ const ButtonContainer = styled.button`
     text-align: center;
 `;
 
-const Button = ({children}) => <ButtonContainer>{children}</ButtonContainer>
 
-export default Button
+function Button({children}) {
+  return (
+    <ButtonContainer>{children}</ButtonContainer>
+  )
+}
+export default Button;
