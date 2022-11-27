@@ -7,14 +7,13 @@ import styled from "styled-components";
 const AdvertContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
+    justify-content: center;
   }
 `;
 
 const ImageContainer = styled.div`
-  border: 2px solid blue;
   @media (min-width: 768px) {
     display: flex;
-    width: 50%;
   }
   
 `;

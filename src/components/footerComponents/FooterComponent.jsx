@@ -4,8 +4,6 @@ import SocialMedia from "components/footerComponents/SocialMedia"
 import QuickLinks from 'components/footerComponents/QuickLinks';
 
 const FooterComponentWrapper = styled.div`
-    // border: 7px solid red;
-    padding: 20px 0;
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
@@ -13,17 +11,14 @@ const FooterComponentWrapper = styled.div`
       }
 `
 const QuickLinksWrapper =styled.div`
-    // border: 2px solid blue;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
 `;
 
 const ContactUsWrapper = styled.div`
-    // border: 4px solid green;
     border-bottom: 1px solid grey;
 `;
 const TermsAndConditionWrapper = styled.div`
-    // border: 2px solid blue;
     border-bottom: 1px solid grey;
 
 `
