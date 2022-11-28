@@ -14,7 +14,6 @@ const ImageContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
   }
-  
 `;
 
 function AdvertComponent() {
@@ -22,7 +21,9 @@ function AdvertComponent() {
     <AdvertContainer>
       <AdvertDetails />
       <ImageContainer>
-        <ImageComponent src={`${process.env.PUBLIC_URL}/assets/img/advertImages.png`} />
+        <ImageComponent
+          src={`${process.env.PUBLIC_URL}/assets/img/advertImages.png`}
+        />
       </ImageContainer>
     </AdvertContainer>
   );
