@@ -11,6 +11,7 @@ const headings = (theme) => `
     line-height: 40px;
     color: ${theme.colors.primary};
 `;
+
 const bodyLarge = (theme) => `
     font-size: ${theme.fontSizes.h1};
     font-weight: ${theme.fontWeights.bold};
@@ -21,28 +22,36 @@ const bodyMedium = (theme) => `
     font-weight: ${theme.fontWeights.regular};
     font-size: ${theme.fontSizes.h3};
     color: ${theme.colors.secondary};
-
 `;
 const bodySmall = (theme) => `
     font-weight: ${theme.fontWeights.regular};
     font-size: ${theme.fontSizes.h3};
+    color: ${theme.colors.primary};
+`;
+const bodySmallTwo = (theme) => `
+    font-weight: ${theme.fontWeights.regular};
+    font-size: ${theme.fontSizes.h3};
+    color: ${theme.colors.tertiary};
 `;
 
-const footerHeading = (theme) =>`
+const footerHeading = (theme) => `
   font-size: ${theme.fontSizes.h3};
-  font-weight: ${theme.fontWeights.medium};
+  font-weight: ${theme.fontWeights.bold};
   text-align: left;
+  color: ${theme.colors.tertiary};
 `;
 
-const footerSmall = (theme) =>`
+const footerSmall = (theme) => `
   font-size: ${theme.fontSizes.h3};
   font-weight: ${theme.fontWeights.regular};
+  color: ${theme.colors.tertiary};
   text-align: left;
 `;
 
 const variants = {
   defaultStyle,
   bodySmall,
+  bodySmallTwo,
   bodyMedium,
   bodyLarge,
   headings,
@@ -52,7 +61,7 @@ const variants = {
 
 export const Typography = styled.p`
   ${({ theme }) => defaultStyle(theme)}
-  ${({variant, theme}) => variants[variant](theme)}
+  ${({ variant, theme }) => variants[variant](theme)}
 `;
 
 Typography.defaultProps = {

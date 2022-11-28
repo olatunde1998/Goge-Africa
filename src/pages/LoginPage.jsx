@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components';
-import LeftContainer from 'components/loginComponent/leftContainer/LeftContainer';
-import RightContainer from 'components/loginComponent/rightContainer/RightContainer';
+import React from "react";
+import styled from "styled-components";
+import LeftContainer from "components/loginComponent/leftContainer/LeftContainer";
+import RightContainer from "components/loginComponent/rightContainer/RightContainer";
 
 const LoginWrapper = styled.div`
   border: 2px solid purple;
@@ -10,16 +10,15 @@ const LoginWrapper = styled.div`
     display: flex;
     justify-content: center;
   }
-  
-`
+`;
 
 function LoginPage() {
   return (
     <LoginWrapper>
-        <LeftContainer />
-        <RightContainer />
+      <LeftContainer />
+      <RightContainer />
     </LoginWrapper>
-  )
+  );
 }
 
 export default LoginPage;

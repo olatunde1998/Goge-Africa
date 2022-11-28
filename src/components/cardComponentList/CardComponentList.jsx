@@ -3,7 +3,6 @@ import Card from "components/cardComponentList/Card";
 import styled from "styled-components";
 
 const CardComponentListWrapper = styled.div`
-  // border: 2px solid brown;
   margin: 5rem 0;
 `;
 
@@ -14,7 +13,7 @@ function CardComponentList({ dummyData }) {
     <CardComponentListWrapper>
       {dummyData &&
         dummyData.map((cardData, idx) => {
-          const bgIndex = idx % bgColors.length
+          const bgIndex = idx % bgColors.length;
           return (
             <Card
               key={idx}

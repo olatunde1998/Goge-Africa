@@ -1,10 +1,10 @@
 import React from "react";
 import { Typography } from "components/Typography";
 
-function QuickLinks() {
+function ContactUsList() {
   return (
     <div>
-      <Typography variant="footerHeading">Home</Typography>
+      <Typography variant="footerHeading">Quicklinks</Typography>
       <Typography variant="footerSmall">Courses</Typography>
       <Typography variant="footerSmall">About Us</Typography>
       <Typography variant="footerSmall">Contact Us</Typography>
@@ -13,4 +13,4 @@ function QuickLinks() {
   );
 }
 
-export default QuickLinks;
+export default ContactUsList;
