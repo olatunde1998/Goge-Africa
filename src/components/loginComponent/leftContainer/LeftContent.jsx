@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Typography } from 'components/Typography';
-import ImageComponent from 'components/loginComponent/leftContainer/ImageComponent';
-import InputComponent from 'components/loginComponent/leftContainer/InputComponent';
 import ButtonComponent from 'components/loginComponent/leftContainer/ButtonComponent';
+import ImageComponent from '../rightContainer/ImageComponent';
+import InputFieldComponent from 'components/inputFieldComponents/InputFieldComponents';
 import {Link} from "react-router-dom";
 
 const LeftContentWrapper = styled.div`
@@ -21,14 +21,11 @@ const LeftContentWrapper = styled.div`
 function LeftContent() {
   return (
     <LeftContentWrapper>
-        <ImageComponent />
-        <Typography>Sign in to your account to continue</Typography>
-        <div>
-        <InputComponent  placeholder="full name"/>
-        <InputComponent />
-
-        </div>
+        <ImageComponent src="assets/img/Logo.png"/>
+        <InputFieldComponent placeholder="Full Name"/>
+        <InputFieldComponent placeholder="Password"/>
         
+        <Typography>Sign in to your account to continue</Typography>  
         <Typography variant="bodyMedium"> Don't have an account? Sign Up</Typography>
        <Link to="blog">  <ButtonComponent /></Link>
     </LeftContentWrapper>
