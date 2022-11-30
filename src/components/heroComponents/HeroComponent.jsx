@@ -1,9 +1,9 @@
 import React from "react";
-import AdvertDetails from "components/advertComponents/AdvertDetails";
+import HeroTexts from "components/heroComponents/HeroText";
 import ImageComponent from "components/loginComponent/rightContainer/ImageComponent";
 import styled from "styled-components";
 
-const AdvertContainer = styled.div`
+const HeroContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -16,17 +16,17 @@ const ImageContainer = styled.div`
   }
 `;
 
-function AdvertComponent() {
+function HeroComponent({title, subtitle, imgURL}) {
   return (
-    <AdvertContainer>
-      <AdvertDetails />
+    <HeroContainer>
+      <HeroTexts  title={title} subtitle={subtitle}/>
       <ImageContainer>
         <ImageComponent
-          src={`${process.env.PUBLIC_URL}/assets/img/advertImages.png`}
+          src={imgURL} 
         />
       </ImageContainer>
-    </AdvertContainer>
+    </HeroContainer>
   );
 }
 
-export default AdvertComponent;
+export default HeroComponent;

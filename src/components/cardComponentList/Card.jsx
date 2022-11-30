@@ -1,8 +1,9 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import ImageComponent from "components/ImageComponents/ImageComponent";
+import ImageComponent from "components/imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
-import  { ButtonContainer } from "components/buttonComponent/Button";
+import { ButtonContainer } from "components/buttonComponent/Button";
+import { Link } from "react-router-dom";
 
 const CardContainer = styled.div`
   max-width: 30rem;
@@ -59,7 +60,9 @@ function card({ imgURL, description, date, headings, bg }) {
         <Typography variant="bodyLarge">{headings}</Typography>
         <Typography variant="bodySmallTwo">{date}</Typography>
         <Typography variant="bodySmallTwo">{description}</Typography>
-        <ButtonContainer primary>Read More...</ButtonContainer>
+        <Link to="/contactuspage">
+          <ButtonContainer primary>Read More...</ButtonContainer>
+        </Link>
       </DetailContainer>
     </CardContainer>
   );

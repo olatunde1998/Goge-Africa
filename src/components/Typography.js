@@ -20,8 +20,9 @@ const bodyLarge = (theme) => `
 `;
 const bodyMedium = (theme) => `
     font-weight: ${theme.fontWeights.regular};
-    font-size: ${theme.fontSizes.h3};
-    color: ${theme.colors.secondary};
+    font-size: ${theme.fontSizes.h2};
+    color: ${theme.colors.primary};
+    text-align: left;
 `;
 const bodySmall = (theme) => `
     font-weight: ${theme.fontWeights.regular};
@@ -32,6 +33,12 @@ const bodySmallTwo = (theme) => `
     font-weight: ${theme.fontWeights.regular};
     font-size: ${theme.fontSizes.h3};
     color: ${theme.colors.tertiary};
+`;
+const bodySmallThree = (theme) => `
+    font-weight: ${theme.fontWeights.regular};
+    font-size: ${theme.fontSizes.h3};
+    color: ${theme.colors.secondary};
+    text-align: left;
 `;
 
 const footerHeading = (theme) => `
@@ -52,6 +59,7 @@ const variants = {
   defaultStyle,
   bodySmall,
   bodySmallTwo,
+  bodySmallThree,
   bodyMedium,
   bodyLarge,
   headings,

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import ImageComponent from "components/ImageComponents/ImageComponent";
+import ImageComponent from "components/imageComponents/ImageComponent";
 
 const SocialMediaWrapper = styled.div``;
 const ImageWrapper = styled.div`
