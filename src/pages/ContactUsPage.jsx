@@ -33,10 +33,11 @@ function ContactUsPage() {
   return (
     <div>
       <NavigationComponent />
-      <AdvertComponent 
-      title="24hrs On Deck Customer Support" 
-      subtitle="We are at your call. We serve you always."
-      imgURL="/assets/img/contactPage-img.png"/>
+      <AdvertComponent
+        title="24hrs On Deck Customer Support"
+        subtitle="We are at your call. We serve you always."
+        imgURL="/assets/img/contactPage-img.png"
+      />
       <MessageFormContainer>
         <LetTalkWrapper>
           <Typography variant="bodyMedium">Let's Talk!</Typography>
