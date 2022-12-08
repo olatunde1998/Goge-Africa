@@ -1,9 +1,14 @@
-import React from "react";
 import styled from "styled-components";
 
-const Image = styled.img`
+export const Image = styled.img`
   max-width: 100%;
   height: auto;
+`;
+export const AvatarImage = styled(Image)`
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 `;
 
 function ImageComponent({ src }) {
