@@ -1,5 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavigationListContainer = styled.div`
   @media (min-width: 768px) {
@@ -14,11 +15,21 @@ const NavigationListContainer = styled.div`
 function NavigationList() {
   return (
     <NavigationListContainer>
-      <Typography variant="bodySmall">Home</Typography>
-      <Typography variant="bodySmall">Courses</Typography>
-      <Typography variant="bodySmall">Blog</Typography>
-      <Typography variant="bodySmall">About Us</Typography>
-      <Typography variant="bodySmall">Contact Us</Typography>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <Typography variant="bodySmall">Home</Typography>
+      </Link>
+      <Link to="/courses" style={{ textDecoration: "none" }}>
+        <Typography variant="bodySmall">Courses</Typography>
+      </Link>
+      <Link to="/blog" style={{ textDecoration: "none" }}>
+        <Typography variant="bodySmall">Blog</Typography>
+      </Link>
+      <Link to="/about" style={{ textDecoration: "none" }}>
+        <Typography variant="bodySmall">About Us</Typography>
+      </Link>
+      <Link to="/contact" style={{ textDecoration: "none" }}>
+        <Typography variant="bodySmall">Contact Us</Typography>
+      </Link>
     </NavigationListContainer>
   );
 }
