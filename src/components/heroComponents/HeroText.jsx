@@ -1,9 +1,9 @@
-import React from "react";
 import { Typography } from "components/Typography";
 import styled from "styled-components";
 
 const HeroTextsContainer = styled.div`
   text-align: left;
+  max-width: 320px;
   padding-left: 0.8rem;
   @media (min-width: 768px) {
     align-items: center;
