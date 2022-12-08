@@ -11,6 +11,21 @@ const headings = (theme) => `
     line-height: 40px;
     color: ${theme.colors.primary};
 `;
+const headingSmall = (theme) => `
+    font-size: ${theme.fontSizes.h2};
+    font-weight: ${theme.fontWeights.bold};
+    line-height: 24px;
+    color: ${theme.colors.primary};
+    text-align: left;
+`;
+const headingNormal = (theme) => `
+    font-size: ${theme.fontSizes.h2};
+    font-weight: ${theme.fontWeights.bold};
+    line-height: 24px;
+    color: ${theme.colors.secondary};
+    text-align: left;
+`;
+
 
 const bodyLarge = (theme) => `
     font-size: ${theme.fontSizes.h1};
@@ -63,8 +78,10 @@ const variants = {
   bodyMedium,
   bodyLarge,
   headings,
+  headingSmall,
   footerSmall,
   footerHeading,
+  headingNormal,
 };
 
 export const Typography = styled.p`
