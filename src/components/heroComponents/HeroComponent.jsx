@@ -1,7 +1,6 @@
-import React from "react";
 import HeroTexts from "components/heroComponents/HeroText";
-import ImageComponent from "components/loginComponent/rightContainer/ImageComponent";
 import styled from "styled-components";
+import ImageComponent from "components/imageComponents/ImageComponent";
 
 const HeroContainer = styled.div`
   @media (min-width: 768px) {
@@ -16,14 +15,12 @@ const ImageContainer = styled.div`
   }
 `;
 
-function HeroComponent({title, subtitle, imgURL}) {
+function HeroComponent({ title, subtitle, imgURL }) {
   return (
     <HeroContainer>
-      <HeroTexts  title={title} subtitle={subtitle}/>
+      <HeroTexts title={title} subtitle={subtitle} />
       <ImageContainer>
-        <ImageComponent
-          src={imgURL} 
-        />
+        <ImageComponent src={imgURL} />
       </ImageContainer>
     </HeroContainer>
   );
