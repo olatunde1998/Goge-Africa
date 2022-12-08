@@ -13,11 +13,15 @@ export const ButtonContainer = styled.button`
   border: none;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+
 `;
 export const LargeButtonContainer = styled(ButtonContainer)`
   min-width: 26rem;
   padding: 1.3rem 2.2rem;
   border-radius: 1.6rem;
+  cursor: pointer;
+
   @media (max-width: 750px) {
     min-width: 18rem;
   }

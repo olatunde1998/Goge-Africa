@@ -60,7 +60,7 @@ function card({ imgURL, description, date, headings, bg }) {
         <Typography variant="bodyLarge">{headings}</Typography>
         <Typography variant="bodySmallTwo">{date}</Typography>
         <Typography variant="bodySmallTwo">{description}</Typography>
-        <Link to="/contactuspage">
+        <Link to="/blog/1" style={{ textDecoration: "none" }}>
           <ButtonContainer primary>Read More...</ButtonContainer>
         </Link>
       </DetailContainer>

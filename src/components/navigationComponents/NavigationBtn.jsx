@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 import Button from "components/buttonComponent/Button";
 
 const NavButtonContainer = styled.div`
@@ -13,8 +13,12 @@ const NavButtonContainer = styled.div`
 function NavigationBtn() {
   return (
     <NavButtonContainer>
-      <Button>Be a Contributor</Button>
-      <Button>Login</Button>
+      <Link to="/contributor" style={{ textDecoration: "none" }}>
+        <Button>Be a Contributor</Button>
+      </Link>
+      <Link to="/signin" style={{ textDecoration: "none" }}>
+        <Button>Login</Button>
+      </Link>
     </NavButtonContainer>
   );
 }

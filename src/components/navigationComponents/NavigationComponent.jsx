@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import NavigationImg from "./NavigationImage";
 import NavigationList from "components/navigationComponents/NavigationList";
