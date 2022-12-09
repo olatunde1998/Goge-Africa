@@ -1,9 +1,10 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
+import Button from "components/buttonComponent/Button";
 
-const HeroTextsContainer = styled.div`
+const AboutTextsContainer = styled.div`
   text-align: left;
-  max-width: 320px;
+  max-width: 420px;
   padding-left: 0.8rem;
   @media (min-width: 768px) {
     align-items: center;
@@ -13,13 +14,14 @@ const HeroTextsContainer = styled.div`
   }
 `;
 
-function HeroTexts({ title, subtitle }) {
+function AboutTexts({ title, subtitle }) {
   return (
-    <HeroTextsContainer>
+    <AboutTextsContainer>
       <Typography variant="headingsMedium">{title}</Typography>
-      <Typography variant="bodySmallFour">{subtitle}</Typography>
-    </HeroTextsContainer>
+      <Typography variant="bodySmallThree">{subtitle}</Typography>
+      <Button>Say Hello</Button>
+    </AboutTextsContainer>
   );
 }
 
-export default HeroTexts;
+export default AboutTexts;

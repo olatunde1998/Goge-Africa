@@ -11,6 +11,12 @@ const headings = (theme) => `
     line-height: 40px;
     color: ${theme.colors.primary};
 `;
+const headingsMedium = (theme) => `
+    font-size: ${theme.fontSizes.h1};
+    font-weight: ${theme.fontWeights.bold};
+    line-height: 40px;
+    color: white;
+`;
 const headingSmall = (theme) => `
     font-size: ${theme.fontSizes.h2};
     font-weight: ${theme.fontWeights.bold};
@@ -54,6 +60,14 @@ const bodySmallThree = (theme) => `
     font-size: ${theme.fontSizes.h3};
     color: ${theme.colors.secondary};
     text-align: left;
+    line-height: 30px;
+`;
+const bodySmallFour = (theme) => `
+    font-weight: ${theme.fontWeights.regular};
+    font-size: ${theme.fontSizes.h3};
+    color: white;
+    text-align: left;
+    line-height: 30px;
 `;
 
 const footerHeading = (theme) => `
@@ -75,13 +89,16 @@ const variants = {
   bodySmall,
   bodySmallTwo,
   bodySmallThree,
+  bodySmallFour,
   bodyMedium,
   bodyLarge,
   headings,
+  headingsMedium,
   headingSmall,
   footerSmall,
   footerHeading,
   headingNormal,
+  
 };
 
 export const Typography = styled.p`

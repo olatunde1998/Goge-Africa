@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const HeroTextsContainer = styled.div`
   text-align: left;
-  max-width: 320px;
+  max-width: 420px;
   padding-left: 0.8rem;
   @media (min-width: 768px) {
     align-items: center;
@@ -13,13 +13,13 @@ const HeroTextsContainer = styled.div`
   }
 `;
 
-function HeroTexts({ title, subtitle }) {
+function HeroRedTexts({ title, subtitle }) {
   return (
     <HeroTextsContainer>
-      <Typography variant="headingsMedium">{title}</Typography>
-      <Typography variant="bodySmallFour">{subtitle}</Typography>
+      <Typography variant="headings">{title}</Typography>
+      <Typography variant="bodySmallThree">{subtitle}</Typography>
     </HeroTextsContainer>
   );
 }
 
-export default HeroTexts;
+export default HeroRedTexts;
