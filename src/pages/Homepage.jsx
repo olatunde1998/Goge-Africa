@@ -5,6 +5,10 @@ import CardComponentList from "components/homeCardComponent/CardComponentList";
 import CoursesList from "components/homeCardComponent/CoursesList";
 import styled from "styled-components";
 
+
+const HeroComponentWrapper = styled.div`
+  background-color: #FF8A00;
+`
 const CardWrapper = styled.div`
   border: 2px solid red;
   display: flex;
@@ -19,11 +23,13 @@ function Homepage() {
   return (
     <div>
       <NavigationComponent />
+      <HeroComponentWrapper>
       <HeroComponent
         title="Browse Thousands of Our Video Tutorials Curated Only for you."
         subtitle="Access all tutorials and resources when you become a premium member of Semaj Africa."
         imgURL="assets/img/home-page-image.png"
       />
+      </HeroComponentWrapper>
       <CardWrapper>
         <CardWrapperBox>
           <CardComponentList />
