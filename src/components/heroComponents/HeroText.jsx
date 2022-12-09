@@ -16,8 +16,8 @@ const HeroTextsContainer = styled.div`
 function HeroTexts({ title, subtitle }) {
   return (
     <HeroTextsContainer>
-      <Typography variant="headings">{title}</Typography>
-      <Typography variant="bodySmallThree">{subtitle}</Typography>
+      <Typography variant="headingsMedium">{title}</Typography>
+      <Typography variant="bodySmallFour">{subtitle}</Typography>
     </HeroTextsContainer>
   );
 }
