@@ -50,15 +50,15 @@ const DetailContainer = styled.div`
   border-radius: 0px 0px 15px 15px;
 `;
 
-function card({ imgURL, description, date, headings, bg }) {
+function card({ imgURL, author, description, date, headings, bg }) {
   return (
     <CardContainer>
       <ImageContainer mode={bg}>
-        <ImageComponent src={imgURL} />
+        <ImageComponent src={imgURL}/>
       </ImageContainer>
       <DetailContainer>
         <Typography variant="bodyLarge">{headings}</Typography>
-        <Typography variant="bodySmallTwo">{date}</Typography>
+        <Typography variant="bodySmallTwo">{date} -by {author}</Typography>
         <Typography variant="bodySmallTwo">{description}</Typography>
         <Link to="/blog/1" style={{ textDecoration: "none" }}>
           <ButtonContainer primary>Read More...</ButtonContainer>
