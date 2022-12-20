@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import SocialMedia from "components/footerComponents/SocialMedia";
 import ContactUsList from "components/footerComponents/ContactUsLists";
