@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import NavigationComponent from "components/navigationComponents/NavigationComponent";
-import HeroComponent from "components/heroComponents/HeroComponent";
+import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import FooterComponent from "components/footerComponents/FooterComponent";
 import { Typography } from "components/Typography";
 import ImageComponent from "components/imageComponents/ImageComponent";
@@ -30,7 +30,7 @@ function BlogDetailsPage() {
   return (
     <BlogDetailsPageWrapper>
       <NavigationComponent />
-      <HeroComponent
+      <HeroRedComponent
         title="How To; Have A Good Music Listening Ear"
         subtitle="19 Augs, 2019 -by Tommy Lang"
         imgURL="/assets/img/blogDetailPage-image1.png"
