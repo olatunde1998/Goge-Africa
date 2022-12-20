@@ -4,10 +4,10 @@ import { Typography } from "components/Typography";
 
 
 const CardContainer = styled.div`
-  max-width: 350px;
-  margin: 10px 10px 20px 10px;
+  width: 150px;
+  margin: 2px 5px 20px 2px;
   @media (min-width: 768px) {
-  max-width: 250px;  
+  width: 200px;  
   margin: 20px 2px 10px 20px;
 
   }
@@ -23,7 +23,7 @@ const DetailContainer = styled.div`
   text-align: left;
   background-color: #ff8a00;
   color: white;
-  height:25%;
+  height:40%;
   padding-left: 20px;
   padding-right: 30%;
   padding-bottom: 15px;

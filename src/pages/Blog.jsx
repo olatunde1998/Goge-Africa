@@ -2,7 +2,7 @@ import NavigationComponent from "components/navigationComponents/NavigationCompo
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import FooterComponent from "components/footerComponents/FooterComponent";
 import CardComponentList from "components/cardComponentList/CardComponentList";
-import DummyData from "components/dummyData/cardData.json";
+// import DummyData from "components/dummyData/cardData.json";
 
 function Blog() {
   return (
@@ -13,7 +13,7 @@ function Blog() {
         subtitle="Be informed! Never miss a Single post"
         imgURL="/assets/img/blogPage-img.png"
       />
-      <CardComponentList dummyData={DummyData} />
+      <CardComponentList/>
       <FooterComponent />
     </div>
   );

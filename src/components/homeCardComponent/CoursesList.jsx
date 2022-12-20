@@ -2,11 +2,21 @@ import { Typography } from "components/Typography";
 import styled from "styled-components";
 
 const CourseListWrapper = styled.div`
-  border: 2px solid red;
-  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  @media (min-width: 768px) {
+  padding-left: 24px;
+  display: block;
+  }
 `;
 const CourseBox = styled.div`
+  padding: 4px;
+  justify-content: center;
+  @media (min-width: 768px) {
   padding: 12px;
+
+    }
 `;
 
 function CoursesList() {

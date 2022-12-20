@@ -2,6 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Typography } from "components/Typography";
 import ImageComponent from "components/imageComponents/ImageComponent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 const SocialMediaWrapper = styled.div``;
 const ImageWrapper = styled.div`
@@ -13,6 +20,8 @@ const SocialIconItem = styled.div`
   height: 20px;
   width: 1.5rem;
   margin-right: 20px;
+  background-color: white;
+  
 `;
 const SocialIconWrapper = styled.div`
   display: flex;
@@ -27,7 +36,7 @@ function SocialMedia() {
   return (
     <SocialMediaWrapper>
       <ImageWrapper>
-        <ImageComponent src={`${process.env.PUBLIC_URL}/assets/img/Logo.png`} />
+        <ImageComponent src="assets/img/Logo.png" />
       </ImageWrapper>
       <SocialDetails>
         <Typography variant="footerSmall">
@@ -38,24 +47,24 @@ function SocialMedia() {
       </SocialDetails>
       <SocialIconWrapper>
         <SocialIconItem>
-          <ImageComponent
-            src={`${process.env.PUBLIC_URL}/assets/img/facebook.png`}
-          />
+          <a href="www.facebook.com">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
         </SocialIconItem>
         <SocialIconItem>
-          <ImageComponent
-            src={`${process.env.PUBLIC_URL}/assets/img/twitter.png`}
-          />
+          <a href="www.facebook.com">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </SocialIconItem>
         <SocialIconItem>
-          <ImageComponent
-            src={`${process.env.PUBLIC_URL}/assets/img/youtube.png`}
-          />
+          <a href="www.facebook.com">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
         </SocialIconItem>
         <SocialIconItem>
-          <ImageComponent
-            src={`${process.env.PUBLIC_URL}/assets/img/linkdin.png`}
-          />
+          <a href="www.facebook.com">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </SocialIconItem>
       </SocialIconWrapper>
     </SocialMediaWrapper>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Card from "components/homeCardComponent/Card";
+import Card from "components/coursesDashboard/Card";
 // import axios from "axios";
 // import { useState } from "react";
 import { useEffect } from "react";
@@ -9,6 +9,10 @@ import { fetchCourses } from "redux/actions/CoursesAction";
 
 const CardComponentListWrapper = styled.div`
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;

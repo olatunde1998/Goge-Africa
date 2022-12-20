@@ -64,7 +64,7 @@ function ContributorForm() {
     onSubmit: async (values) => {
       const res = await new Promise((resolve) =>
         setTimeout(
-          resolve({ status: 200, error: "something went wrong" }),
+          resolve({ status: 200, error: "Login successful" }),
           5000
         )
       );

@@ -45,7 +45,7 @@ function SigninForm() {
     onSubmit: async (values) => {
       const res = await new Promise((resolve) =>
         setTimeout(
-          resolve({ status: 200, error: "something went wrong" }),
+          resolve({ status: 200, error: "login successful" }),
           5000
         )
       );

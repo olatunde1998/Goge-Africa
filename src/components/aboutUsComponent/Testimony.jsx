@@ -1,19 +1,26 @@
 import styled from "styled-components";
 import TestimonyList from "components/aboutUsComponent/TestimonyList";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-const ImageWrapper = styled.div`
+const IconWrapper = styled.div`
   max-width: 250px;
+  background-color: #ff8a00;
+  color: white;
+  font-size: 30px;
 `;
-function Testimony({ rating, comment, imgURL }) {
+const TestimonyWrapper = styled.div`
+  margin-right: 20px;
+`
+function Testimony({ rating, comment, icon }) {
   return (
-    <div>
-      <ImageWrapper>
-        <ImageComponent src={imgURL} />
-      </ImageWrapper>
+    <TestimonyWrapper>
+      <IconWrapper>
+        <a href="www.facebook.com">
+          <FontAwesomeIcon icon={icon} />
+        </a>
+      </IconWrapper>
       <TestimonyList rating={rating} comment={comment} />
-    </div>
+    </TestimonyWrapper>
   );
 }
 

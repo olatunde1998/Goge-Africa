@@ -10,6 +10,7 @@ import SignUp from "pages/SignUp";
 import Contributor from "pages/Contributor";
 import Password from "pages/Password";
 import Courses from "pages/Courses";
+import AllOrders from "pages/AllOrders";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/contributor" element={<Contributor />} />
         <Route path="/password" element={<Password />} />
         <Route path="/" element={<Homepage />} />
+        <Route path="/orders" element={<AllOrders />} />
+
       </Routes>
     </div>
   );
