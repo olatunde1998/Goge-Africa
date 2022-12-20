@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Typography } from "components/Typography";
 
 const TestimonyListWrapper = styled.div`
-    border: 2px solid green;
-    max-width: 250px;
+  max-width: 150px;
 `;
 
 function TestimonyList({ rating, comment }) {
