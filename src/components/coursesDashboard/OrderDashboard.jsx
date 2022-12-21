@@ -1,7 +1,8 @@
-import { Image } from "components/imageComponents/ImageComponent";
 import { Button } from "components/passwordComponent/ButtonComponent";
 import { Typography } from "components/Typography";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import SuccessfulOrderListDashboard from "components/coursesDashboard/SuccessOrderListDashboard"
 
 const OrderDashboardWrapper = styled.div`
   margin-bottom: 100px;
@@ -36,16 +37,7 @@ const OrderHeadingWrapper = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   justify-content: space-between;
 `;
-const DetailsWrapper = styled.div`
-  border: 0.4px solid grey;
-  display: flex;
-  padding: 5px;
-  padding: 10px;
-  justify-content: space-between;
-`;
-const AvatarWrapper = styled.div`
-  max-width: 100px;
-`
+
 const OrderImageAvatar = styled.div`
   display: flex;
   max-width: 250px;
@@ -55,11 +47,7 @@ const OrderHeadingInfo = styled.div`
   width: 60%;
   justify-content: space-around;
 `;
-const OrderInfo = styled.div`
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-`;
+
 const ButtonWrapper = styled.div`
   max-width: 160px;
   margin: 50px auto;
@@ -80,7 +68,7 @@ function OrderDashboard() {
         
         <OrderHeadingWrapper>
           <OrderImageAvatar>
-            <Typography variant="bodySmallThree">Order Details</Typography>
+          <Link to="/settings" style={{ textDecoration: "none" }}><Typography variant="bodySmallThree">Order Details</Typography></Link>
           </OrderImageAvatar>
           <OrderHeadingInfo>
             <Typography variant="bodySmallThree">Category</Typography>
@@ -89,21 +77,8 @@ function OrderDashboard() {
             <Typography variant="bodySmallThree">Date</Typography>
           </OrderHeadingInfo>
         </OrderHeadingWrapper>
-
-        <DetailsWrapper>
-          <OrderImageAvatar>
-            <AvatarWrapper>
-            <Image src="assets/img/card-image1.png" alt="photographer pics"/>
-            </AvatarWrapper>
-            <Typography variant="bodySmallThree">4 Weeks Photography Bootcamp</Typography>
-          </OrderImageAvatar>
-          <OrderInfo>
-            <Typography variant="bodySmallThree">Photography</Typography>
-            <Typography variant="bodySmallThree">Successful</Typography>
-            <Typography variant="bodySmallThree">Charles Dickson</Typography>
-            <Typography variant="bodySmallThree">20/12/19</Typography>
-          </OrderInfo>
-        </DetailsWrapper>
+        <SuccessfulOrderListDashboard/>
+        
         <ButtonWrapper>
       
         <Button>View More</Button>

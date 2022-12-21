@@ -4,12 +4,17 @@ import { Image } from "components/imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
   background-color: #c4c4c4;
-  margin-top: 150px;
+  display: none;
+
   @media (min-width: 768px) {
     width: 50%;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 `;
+const RightContainerBox = styled.div`
+`
 const ImageWrapper = styled.div`
   width: 100px;
   margin: 0 auto;
@@ -29,6 +34,7 @@ const PrevNextWrapper = styled.div`
 function RightContainer() {
   return (
     <RightContainerWrapper>
+      <RightContainerBox>
       <ImageWrapper>
         <Image src="assets/img/light-img.png" />
       </ImageWrapper>
@@ -41,6 +47,7 @@ function RightContainer() {
       <PrevNextWrapper>
         <Image src="assets/img/prev-next.png" />
       </PrevNextWrapper>
+      </RightContainerBox>
     </RightContainerWrapper>
   );
 }

@@ -41,9 +41,9 @@ function CourseDashboard() {
             <Typography variant="bodySmallThree">My Courses</Typography>
         </CourseHeading>
         <FreePremium>
-            <Typography variant="bodySmallThree">My Courses</Typography>
-            <Typography variant="bodySmallThree">My Courses</Typography>
-            <Link to="/orders" style={{ textDecoration: "none" }}><Typography variant="bodySmallThree">Order</Typography></Link>
+            <Typography variant="bodySmallThree">Free Courses</Typography>
+            <Typography variant="bodySmallThree">Premium Courses</Typography>
+            <Link to="/orders" style={{ textDecoration: "none" }}><Typography variant="bodySmallThree">Ordered Courses</Typography></Link>
         </FreePremium>
         <CardComponentList/>
 

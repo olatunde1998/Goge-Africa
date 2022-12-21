@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ImageComponent from "components/imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
+import { Link } from "react-router-dom";
 
 
 const CardContainer = styled.div`
@@ -35,7 +36,11 @@ function Card({ imgURL, courseName }) {
   return (
     <CardContainer>
       <ImageContainer>
+        <Link to="/cart" style={{ textDecoration: "none" }}>
         <ImageComponent src={imgURL} />
+
+        </Link>
+
       </ImageContainer>
 
       <DetailContainer>
