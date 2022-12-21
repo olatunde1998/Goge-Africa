@@ -11,6 +11,8 @@ import Contributor from "pages/Contributor";
 import Password from "pages/Password";
 import Courses from "pages/Courses";
 import AllOrders from "pages/AllOrders";
+import OrderSettings from "pages/OrderSettings";
+import Cart from "pages/Cart";
 
 function App() {
   return (
@@ -26,8 +28,10 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/contributor" element={<Contributor />} />
         <Route path="/password" element={<Password />} />
-        <Route path="/" element={<Homepage />} />
         <Route path="/orders" element={<AllOrders />} />
+        <Route path="/settings" element={<OrderSettings />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/" element={<Homepage />} />
 
       </Routes>
     </div>
