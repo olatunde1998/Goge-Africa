@@ -8,12 +8,15 @@ import { Input } from "components/signUpComponent/InputComponent";
 
 const FormWrapper = styled.div`
   margin-top: 10px;
-  max-width: 500px;
+  max-width: 320px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+  @media(min-width: 768px){
+    max-width: 500px;
+  }
 `;
 
 const validate = (values) => {
