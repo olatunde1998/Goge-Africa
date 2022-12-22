@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
 import { useFormik } from "formik";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Input } from "components/passwordComponent/InputComponent";
 import { Button } from "components/passwordComponent/ButtonComponent";
 
