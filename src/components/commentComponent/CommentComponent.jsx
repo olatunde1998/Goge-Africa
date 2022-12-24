@@ -17,9 +17,8 @@ const CommentInfo = styled.div`
 
 const ImageContainer = styled.div`
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   background-color: grey;
 `;

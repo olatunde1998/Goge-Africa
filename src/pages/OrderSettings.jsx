@@ -1,4 +1,3 @@
-import React from 'react'
 import NavigationComponent from 'components/navigationComponents/NavigationComponent'
 import FooterComponent from 'components/footerComponents/FooterComponent'
 import SettingsComponent from 'components/coursesDashboard/SettingsComponent'

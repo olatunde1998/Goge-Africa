@@ -1,15 +1,21 @@
-import { Image } from "components/imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 const CartVideoWrapper = styled.div`
-
+  background-color: white;
 `;
 const VideoBox = styled.div`
+  height: 600px;
+  margin-top: 0px;
+  padding: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+
 `;
 const CartVideoSetting = styled.div`
-  border: 2px solid red;
   background-color: #ff8a00;
+  
 `;
 const CartVideoSettingBox = styled.div`
   display: flex;
@@ -24,7 +30,7 @@ function CartVideo() {
     <CartVideoWrapper>
       <CartVideoSetting>
         <VideoBox>
-          <Image src="assets/img/art-of-growing-image1.png" alt="" />
+          <ReactPlayer  width="100%" height="100%"controls url="https://youtu.be/TtDGbDFHbGs"/>
         </VideoBox>
 
         <CartVideoSettingBox>
