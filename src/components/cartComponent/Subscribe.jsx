@@ -5,11 +5,17 @@ import styled from "styled-components";
 
 const SubscribeWrapper = styled.div`
   @media(min-width: 768px){
-    display: flex;
-    justify-content: center;
     padding: 50px;
 }
+
 `;
+const SubscribeContainer = styled.div`
+  @media(min-width: 768px){
+    display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+`
 const SubscribeText = styled.div`
   padding-right: 10px;
  
@@ -21,8 +27,7 @@ const SubscribeEmail =styled.div`
     margin: 0 auto;
     @media(min-width: 768px){
         display: flex;
-        width: 50%;
-        
+        width: 50%; 
     }
     
 `
@@ -30,7 +35,6 @@ const EmailInputWrapper = styled.div`
     @media(min-width:768px){
         width: 50%;
     }
-
 `
 const ButtonWrapper = styled.div`
     @media(min-width:768px){
@@ -43,6 +47,7 @@ const ButtonWrapper = styled.div`
 function Subscribe() {
   return (
     <SubscribeWrapper>
+      <SubscribeContainer>
       <SubscribeText>
         <Typography
           style={{ textAlign: "left", marginLeft: "30px" }}
@@ -66,6 +71,7 @@ function Subscribe() {
         <Button>Submit</Button>
         </ButtonWrapper>
       </SubscribeEmail>
+      </SubscribeContainer>
     </SubscribeWrapper>
   );
 }

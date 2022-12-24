@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
+import { Link } from "react-router-dom";
 
 const DownloadComponentWrapper = styled.div`
   padding: 20px 20px 20px 20px;
@@ -56,9 +57,11 @@ function DownloadComponent() {
             for checkout to view offline
           </Typography>
         </DownloadText>
+        <Link to="/cart/2" style={{ textDecoration: "none" }}>
         <ButtonWrapper>
-            <Button>Download</Button>
+         <Button>Download</Button>
         </ButtonWrapper>
+        </Link>
       </DownloadBox>
     </DownloadComponentWrapper>
   );

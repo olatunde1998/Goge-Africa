@@ -13,6 +13,8 @@ import Courses from "pages/Courses";
 import AllOrders from "pages/AllOrders";
 import OrderSettings from "pages/OrderSettings";
 import Cart from "pages/Cart";
+import Cart2 from "pages/Cart2";
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route path="/orders" element={<AllOrders />} />
         <Route path="/settings" element={<OrderSettings />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/cart/2" element={<Cart2 />} />
         <Route path="/" element={<Homepage />} />
 
       </Routes>

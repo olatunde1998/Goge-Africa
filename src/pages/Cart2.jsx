@@ -1,15 +1,16 @@
 import NavigationComponent from 'components/navigationComponents/NavigationComponent'
 import FooterComponent from 'components/footerComponents/FooterComponent'
-import SettingsComponent from 'components/coursesDashboard/SettingsComponent'
+import CartComponent from 'components/cart2Component/CartComponent';
 
-function OrderSettings() {
+
+function Cart2() {
   return (
     <div>
         <NavigationComponent/>
-        <SettingsComponent/>
+        <CartComponent/>
         <FooterComponent/>
     </div>
   )
 }
 
-export default OrderSettings
+export default Cart2;
