@@ -15,6 +15,10 @@ const FormWrapper = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 `;
+const TypoWrapper = styled.div`
+  display:flex;
+  justify-content: flex-end;
+`;
 
 const validate = (values) => {
   const errors = {};
@@ -66,13 +70,13 @@ function PasswordForm() {
           <Typography variant="bodySmall">{formik.errors.email}</Typography>
         ) : null}
 
-        <Typography variant="bodySmallThree">
+        <TypoWrapper><Typography variant="bodySmallThree">
           {" "}
           Already have an account?{" "}
           <Link to="/signin" style={{ TextDecoder: "none" }}>
             Back to Sign In
           </Link>
-        </Typography>
+        </Typography></TypoWrapper>
         <Button>Proceed</Button>
       </form>
     </FormWrapper>

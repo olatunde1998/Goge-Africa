@@ -3,13 +3,14 @@ import styled from "styled-components";
 import { Image } from "components/imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
-  border: 2px solid green;
-  background-color: #c4c4c4;
-  margin-top: 150px;
-  @media (min-width: 768px) {
-    width: 50%;
-    margin-top: 0px;
-  }
+background-color: #c4c4c4;
+display: none;
+@media (min-width: 768px) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 `;
 const ImageWrapper = styled.div`
   width: 100px;

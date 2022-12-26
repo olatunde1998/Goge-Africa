@@ -1,5 +1,3 @@
-import React from "react";
-// import Gorge from "assets/img/Logo.png";
 import styled from "styled-components";
 
 const NavImageWrapper = styled.div`
@@ -19,7 +17,7 @@ const NavigationImg = styled.img`
 function NavigationImage() {
   return (
     <NavImageWrapper>
-      <NavigationImg src={`${process.env.PUBLIC_URL}/assets/img/Logo.png`} />
+      <NavigationImg src="/assets/img/Logo.png" />
     </NavImageWrapper>
   );
 }

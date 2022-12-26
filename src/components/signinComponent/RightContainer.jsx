@@ -1,6 +1,7 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
 import { Image } from "components/imageComponents/ImageComponent";
+
 const RightContainerWrapper = styled.div`
   background-color: #c4c4c4;
   display: none;
@@ -11,8 +12,8 @@ const RightContainerWrapper = styled.div`
     justify-content: flex-end;
   }
 `;
-const RightContainerBox = styled.div`
-`
+
+const RightContainerBox = styled.div``;
 const ImageWrapper = styled.div`
   width: 100px;
   margin: 0 auto;
@@ -33,18 +34,18 @@ function RightContainer() {
   return (
     <RightContainerWrapper>
       <RightContainerBox>
-      <ImageWrapper>
-        <Image src="assets/img/light-img.png" />
-      </ImageWrapper>
-      <DescriptionWrapper>
-        <Typography variant="bodySmallTwo">
-          Voluptate id deserunt mollit incididunt sint labore eiusmod. Elit
-          officia ex velit velit est mollit.
-        </Typography>
-      </DescriptionWrapper>
-      <PrevNextWrapper>
-        <Image src="assets/img/prev-next.png" />
-      </PrevNextWrapper>
+        <ImageWrapper>
+          <Image src="assets/img/light-img.png" />
+        </ImageWrapper>
+        <DescriptionWrapper>
+          <Typography variant="bodySmallTwo">
+            Voluptate id deserunt mollit incididunt sint labore eiusmod. Elit
+            officia ex velit velit est mollit.
+          </Typography>
+        </DescriptionWrapper>
+        <PrevNextWrapper>
+          <Image src="assets/img/prev-next.png" />
+        </PrevNextWrapper>
       </RightContainerBox>
     </RightContainerWrapper>
   );

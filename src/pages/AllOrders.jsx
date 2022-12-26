@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import NavigationComponent from 'components/navigationComponents/NavigationComponent'
 import OrderDashboard from 'components/coursesDashboard/OrderDashboard'

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {  AvatarImage} from "components/imageComponents/ImageComponent";
+import { AvatarImage } from "components/imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import SettingForm from "components/coursesDashboard/SettingsForm";
 
@@ -26,14 +26,14 @@ const FreePremium = styled.div`
   margin: 5px auto;
   display: flex;
   justify-content: space-between;
-`
+`;
 const AvatarImageWrapper = styled.div`
-border: 2px solid grey;
-max-width: 50px;
-margin: 0 auto;
-border-radius: 100%;
-background: white;
-`
+  border: 2px solid grey;
+  max-width: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: white;
+`;
 
 function SettingsComponent() {
   return (
@@ -48,9 +48,9 @@ function SettingsComponent() {
           <Typography variant="bodySmallThree">Announcement</Typography>
         </FreePremium>
         <AvatarImageWrapper>
-            <AvatarImage src="assets/img/card-image1.png"/>
+          <AvatarImage src="assets/img/card-image1.png" />
         </AvatarImageWrapper>
-        <SettingForm/>
+        <SettingForm />
       </OrderDashboardBox>
     </OrderDashboardWrapper>
   );
