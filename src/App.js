@@ -14,6 +14,7 @@ import AllOrders from "pages/AllOrders";
 import OrderSettings from "pages/OrderSettings";
 import Cart from "pages/Cart";
 import Cart2 from "pages/Cart2";
+import Payment from "pages/Payment";
 
 
 function App() {
@@ -34,7 +35,9 @@ function App() {
         <Route path="/settings" element={<OrderSettings />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/cart/2" element={<Cart2 />} />
-        <Route path="/" element={<Homepage />} />
+        <Route path="/payment" element={<Payment />} />
+
+        <Route index element={<Homepage />} />
 
       </Routes>
     </div>
