@@ -17,7 +17,7 @@ const NavigationImg = styled.img`
 function NavigationImage() {
   return (
     <NavImageWrapper>
-      <NavigationImg src="/assets/img/Logo.png" />
+      <NavigationImg src="/goge-africa/assets/img/Logo.png" />
     </NavImageWrapper>
   );
 }

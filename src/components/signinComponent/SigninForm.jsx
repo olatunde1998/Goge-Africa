@@ -99,7 +99,7 @@ function SigninForm() {
             Sign Up
           </Link>
         </Typography></TypoWrapper>
-        <Button>Sig In</Button>
+        <Button>Sign In</Button>
       </form>
     </FormWrapper>
   );

@@ -1,6 +1,6 @@
 import HeroTexts from "components/heroComponents/HeroText";
 import styled from "styled-components";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 
 const HeroContainer = styled.div`
   @media (min-width: 768px) {

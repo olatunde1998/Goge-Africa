@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import { Image } from "components/imageComponents/ImageComponent";
+import { Image } from "../imageComponents/ImageComponent";
 
 const DetailsWrapper = styled.div`
   border: 0.4px solid grey;

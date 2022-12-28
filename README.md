@@ -5,9 +5,9 @@
 
 # Technologies Used
 
- + [JavaScript](https://javascript.io)
- + [ReactJs](https://reactjs.org/.com)
- + [Redux](https://reduxjs.org/) 
+ + [JavaScript](https://www.javascript.io)
+ + [ReactJs](https://www.reactjs.org/)
+ + [Redux](https://www.reduxjs.org/) 
  + [Styled-components](https://styled-components.com/)
  + [strapi](https://strapi.io/)
 

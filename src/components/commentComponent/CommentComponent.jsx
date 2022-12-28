@@ -1,6 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-import { AvatarImage } from "components/imageComponents/ImageComponent";
+import { AvatarImage } from "../imageComponents/ImageComponent";
 
 const CommentComponentWrapper = styled.div`
   border: 0.5px solid grey;

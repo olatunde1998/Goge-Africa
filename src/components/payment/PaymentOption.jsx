@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import { Image } from "components/imageComponents/ImageComponent";
+import { Image } from "../imageComponents/ImageComponent";
 import Counter from "./Counter";
 
 const DetailsWrapper = styled.div`

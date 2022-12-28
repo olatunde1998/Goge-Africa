@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,

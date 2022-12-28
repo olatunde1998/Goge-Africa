@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image } from "components/imageComponents/ImageComponent";
+import { Image } from "../imageComponents/ImageComponent";
 import PasswordForm from "components/passwordComponent/PasswordForm";
 
 const LeftContentWrapper = styled.div`

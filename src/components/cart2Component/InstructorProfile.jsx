@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Typography } from "components/Typography"
-import { AvatarImage } from "components/imageComponents/ImageComponent";
+import { AvatarImage } from "../imageComponents/ImageComponent";
 
 
 const InstructorProfileWrapper = styled.div`

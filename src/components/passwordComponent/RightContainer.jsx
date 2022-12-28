@@ -1,6 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-import { Image } from "components/imageComponents/ImageComponent";
+import { Image } from "../imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
 // background-color: #c4c4c4;

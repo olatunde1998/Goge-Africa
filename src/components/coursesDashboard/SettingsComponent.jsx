@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AvatarImage } from "components/imageComponents/ImageComponent";
+import { AvatarImage } from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import SettingForm from "components/coursesDashboard/SettingsForm";
 

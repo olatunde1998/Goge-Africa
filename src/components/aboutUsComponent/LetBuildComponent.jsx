@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 import HeroComponent from "components/heroComponents/HeroComponent";
 
 const LetBuildContainer = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedTexts from "./HeroRedText";
 
 const HeroContainer = styled.div`

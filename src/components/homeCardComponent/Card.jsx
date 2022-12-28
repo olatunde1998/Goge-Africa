@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import { Link } from "react-router-dom";
 

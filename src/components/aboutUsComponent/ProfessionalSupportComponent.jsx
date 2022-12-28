@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "components/imageComponents/ImageComponent";
+import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 
 const ProfessionalSupportContainer = styled.div`
