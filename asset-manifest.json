@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Goge-Africa/static/css/main.5e54395b.css",
+    "main.js": "/Goge-Africa/static/js/main.f449aad3.js",
+    "static/js/787.85d565d8.chunk.js": "/Goge-Africa/static/js/787.85d565d8.chunk.js",
+    "index.html": "/Goge-Africa/index.html",
+    "main.5e54395b.css.map": "/Goge-Africa/static/css/main.5e54395b.css.map",
+    "main.f449aad3.js.map": "/Goge-Africa/static/js/main.f449aad3.js.map",
+    "787.85d565d8.chunk.js.map": "/Goge-Africa/static/js/787.85d565d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e54395b.css",
+    "static/js/main.f449aad3.js"
+  ]
+}
