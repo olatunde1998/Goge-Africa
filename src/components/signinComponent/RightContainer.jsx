@@ -4,6 +4,9 @@ import { Image } from "components/imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
   background-color: #c4c4c4;
+  background-image: url("/assets/img/wes-hicks-4-EeTnaC1S4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: none;
   @media (min-width: 768px) {
     width: 50%;
