@@ -12,7 +12,7 @@ export const AvatarImage = styled(ImageStyle)`
 `;
 
 function ImageComponent({ src }) {
-  return <ImageStyle src={src} alt="" />;
+  return <ImageStyle src={src} alt="This is the advert" />;
 }
 
 export default ImageComponent;
