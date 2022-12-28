@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "components/imageComponents/ImageComponent";
+import { Image } from "components/imageComponents/ImageComponent";
 import SigninForm from "components/signinComponent/SigninForm";
 
 const LeftContentWrapper = styled.div`
@@ -27,9 +27,7 @@ function LeftContainer() {
       <ImageWrapper>
         <Image src="/assets/img/Logo.png" />
       </ImageWrapper>
-      <FormHeading>
-        Sign in to your account to continue
-      </FormHeading>
+      <FormHeading>Sign in to your account to continue</FormHeading>
       <SigninForm />
     </LeftContentWrapper>
   );

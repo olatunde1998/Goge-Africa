@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "components/imageComponents/ImageComponent";
+import { Image } from "components/imageComponents/ImageComponent";
 import ContributorForm from "components/contributorComponent/ContributorForm";
 
 const LeftContentWrapper = styled.div`

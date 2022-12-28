@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "components/imageComponents/ImageComponent";
+import { Image } from "components/imageComponents/ImageComponent";
 import SignUpForm from "components/signUpComponent/SignUpForm";
 
 const LeftContentWrapper = styled.div`
