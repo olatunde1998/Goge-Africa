@@ -4,7 +4,8 @@
 
 
 # Technologies Used
- + Javascript
+
+ + [JavaScript](https://javascript.io)
  + [ReactJs](https://reactjs.org/.com)
  + [Redux](https://reduxjs.org/) 
  + [Styled-components](https://styled-components.com/)
@@ -21,10 +22,10 @@ As a practitioner you can view others user medical information
 
 #  How to Contribute
 
-# Clone the repository
+Clone the repository
 $ git clone https://github.com/olatunde1998/Goge-Africa.git
 
-# Change directory into the cloned folder and run the setup script
+Change directory into the cloned folder and run the setup script
 $ cd goge-africa 
 
  ### `npm start`
