@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import { Image } from "../imageComponents/ImageComponent";
+import { ImageStyle } from "../imageComponents/ImageComponent";
 import Counter from "./Counter";
 
 const DetailsWrapper = styled.div`
@@ -50,7 +50,7 @@ function OrderList({ imgURL, courseName, moduleNumber, year, price, date }) {
     <DetailsWrapper>
       <OrderImageAvatar>
         <AvatarWrapper>
-          <Image src={imgURL} alt="photographer pics" />
+          <ImageStyle src={imgURL} alt="photographer pics" />
         </AvatarWrapper>
         <TypoBox>
           {" "}

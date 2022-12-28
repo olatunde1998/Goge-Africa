@@ -1,6 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-import { Image } from "../imageComponents/ImageComponent";
+import { ImageStyle } from "../imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
 // background-color: #c4c4c4;
@@ -35,7 +35,7 @@ function RightContainer() {
   return (
     <RightContainerWrapper>
       <ImageWrapper>
-        <Image src="assets/img/light-img.png" />
+        <ImageStyle src="assets/img/light-img.png" />
       </ImageWrapper>
       <DescriptionWrapper>
         <Typography variant="bodySmallTwo">
@@ -44,7 +44,7 @@ function RightContainer() {
         </Typography>
       </DescriptionWrapper>
       <PrevNextWrapper>
-        <Image src="assets/img/prev-next.png" />
+        <ImageStyle src="assets/img/prev-next.png" />
       </PrevNextWrapper>
     </RightContainerWrapper>
   );

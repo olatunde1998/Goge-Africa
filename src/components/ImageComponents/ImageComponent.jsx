@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Image = styled.img`
+export const ImageStyle = styled.img`
   max-width: 100%;
   height: auto;
 `;
-export const AvatarImage = styled(Image)`
+export const AvatarImage = styled(ImageStyle)`
   vertical-align: middle;
   width: 100px;
   height: 100px;
@@ -12,7 +12,7 @@ export const AvatarImage = styled(Image)`
 `;
 
 function ImageComponent({ src }) {
-  return <Image src={src} alt="" />;
+  return <ImageStyle src={src} alt="" />;
 }
 
 export default ImageComponent;
