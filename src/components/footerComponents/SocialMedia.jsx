@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -35,7 +35,7 @@ function SocialMedia() {
   return (
     <SocialMediaWrapper>
       <ImageWrapper>
-        <ImageComponent src="assets/img/Logo.png" />
+        {/* <ImageComponent src="assets/img/Logo.png" /> */}
       </ImageWrapper>
       <SocialDetails>
         <Typography variant="footerSmall">
