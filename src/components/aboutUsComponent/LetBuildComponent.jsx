@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import HeroComponent from "components/heroComponents/HeroComponent";
-import { ImageStyle } from "components/imageComponents/ImageComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const LetBuildContainer = styled.div`
   background-color: #FFC000;
@@ -24,7 +24,7 @@ function LetBuildComponent({ title, subtitle}) {
       <HeroComponent title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
-        <ImageStyle src="/assets/img/let-build-image.png"/>
+        <PictureStyle src="/assets/img/let-build-image.png"/>
       </ImageContainer>
     </LetBuildContainer>
   );
