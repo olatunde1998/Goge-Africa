@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImageStyle } from "../imageComponents/ImageComponent";
+// import { ImageStyle } from "../imageComponents/ImageComponent";
 import ContributorForm from "components/contributorComponent/ContributorForm";
 
 const LeftContentWrapper = styled.div`
@@ -25,7 +25,7 @@ function LeftContainer() {
   return (
     <LeftContentWrapper>
       <ImageWrapper>
-        <ImageStyle src="/goge-africa/assets/img/Logo.png" />
+        {/* <ImageStyle src="/goge-africa/assets/img/Logo.png" /> */}
       </ImageWrapper>
       <FormHeading>
         {/* <Typography variant="bodySmallThree"> */}

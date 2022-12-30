@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImageStyle } from "../imageComponents/ImageComponent";
+// import { ImageStyle } from "../imageComponents/ImageComponent";
 import PasswordForm from "components/passwordComponent/PasswordForm";
 
 const LeftContentWrapper = styled.div`
@@ -25,7 +25,7 @@ function LeftContainer() {
   return (
     <LeftContentWrapper>
       <ImageWrapper>
-        <ImageStyle src="/assets/img/Logo.png" />
+        {/* <ImageStyle src="/assets/img/Logo.png" /> */}
       </ImageWrapper>
       <FormHeading>
         {/* <Typography variant="bodySmallThree"> */}

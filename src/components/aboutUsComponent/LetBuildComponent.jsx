@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroComponent from "components/heroComponents/HeroComponent";
 
 const LetBuildContainer = styled.div`
@@ -22,7 +22,7 @@ function LetBuildComponent({ title, subtitle, imgURL }) {
     <LetBuildContainer>
       <HeroComponent title={title} subtitle={subtitle} />
       <ImageContainer>
-        <ImageComponent src={imgURL} />
+        {/* <ImageComponent src={imgURL} /> */}
       </ImageContainer>
     </LetBuildContainer>
   );
