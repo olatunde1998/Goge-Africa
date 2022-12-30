@@ -40,7 +40,7 @@ function Homepage() {
         <HeroComponent
           title="Browse Thousands of Our Video Tutorials Curated Only for you."
           subtitle="Access all tutorials and resources when you become a premium member of Semaj Africa."
-          imgURL="/goge-africa/assets/img/home-page-image.png"
+          imgURL="/assets/img/home-page-image.png"
         />
       </HeroComponentWrapper>
       <SearchWrapper>

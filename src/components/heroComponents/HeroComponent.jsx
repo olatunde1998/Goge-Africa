@@ -1,4 +1,5 @@
 import HeroTexts from "components/heroComponents/HeroText";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 
@@ -21,6 +22,7 @@ function HeroComponent({ title, subtitle, imgURL }) {
       <HeroTexts title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
     </HeroContainer>
   );

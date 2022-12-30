@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
@@ -24,7 +23,6 @@ function CreativeTeamComponent({ title, subtitle, imgURL }) {
     <CreativeTeam>
       <HeroRedComponent title={title} subtitle={subtitle} />
       <ImageContainer>
-        {/* <ImageComponent src={imgURL} /> */}
         <PictureStyle src={imgURL}/>
       </ImageContainer>
     </CreativeTeam>

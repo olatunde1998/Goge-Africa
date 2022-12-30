@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import { Link } from "react-router-dom";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const CardContainer = styled.div`
   max-width: 350px;
@@ -34,7 +35,7 @@ function Card({ imgURL, courseName }) {
     <CardContainer>
       <ImageContainer>
         <Link to="/cart" style={{ textDecoration: "none" }}>
-          {/* <ImageComponent src={imgURL} /> */}
+          <PictureStyle src={imgURL}/>
         </Link>
       </ImageContainer>
 
