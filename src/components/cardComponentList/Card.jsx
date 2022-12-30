@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import { ButtonContainer } from "components/buttonComponent/Button";
 import { Link } from "react-router-dom";
@@ -54,7 +54,7 @@ function card({ imgURL, author, description, date, headings, bg }) {
   return (
     <CardContainer>
       <ImageContainer mode={bg}>
-        <ImageComponent src={imgURL}/>
+        {/* <ImageComponent src={imgURL}/> */}
       </ImageContainer>
       <DetailContainer>
         <Typography variant="bodyLarge">{headings}</Typography>

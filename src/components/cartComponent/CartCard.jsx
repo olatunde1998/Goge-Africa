@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import { Link } from "react-router-dom";
 
@@ -36,7 +36,7 @@ function CartCard({ imgURL, courseName }) {
     <CartCardContainer>
       <ImageContainer>
         <Link to="/cart" style={{ textDecoration: "none" }}>
-        <ImageComponent src={imgURL} />
+        {/* <ImageComponent src={imgURL} /> */}
 
         </Link>
 

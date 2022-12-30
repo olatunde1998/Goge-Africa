@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AvatarImage } from "../imageComponents/ImageComponent";
+// import { AvatarImage } from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import SettingForm from "components/coursesDashboard/SettingsForm";
 
@@ -48,7 +48,7 @@ function SettingsComponent() {
           <Typography variant="bodySmallThree">Announcement</Typography>
         </FreePremium>
         <AvatarImageWrapper>
-          <AvatarImage src="assets/img/card-image1.png" />
+          {/* <AvatarImage src="assets/img/card-image1.png" /> */}
         </AvatarImageWrapper>
         <SettingForm />
       </OrderDashboardBox>

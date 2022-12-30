@@ -1,6 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-import { AvatarImage } from "../imageComponents/ImageComponent";
+// import { AvatarImage } from "../imageComponents/ImageComponent";
 
 const CommentComponentWrapper = styled.div`
   border: 0.5px solid grey;
@@ -31,7 +31,7 @@ function CommentComponent({ src, commentInfo, commentDate, reply }) {
   return (
     <CommentComponentWrapper>
       <ImageContainer>
-        <AvatarImage src={src} />
+        {/* <AvatarImage src={src} /> */}
       </ImageContainer>
       <CommentInfo>
         <Typography variant="bodySmallThree">{commentInfo}</Typography>

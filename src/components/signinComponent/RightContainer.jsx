@@ -1,6 +1,6 @@
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-import { ImageStyle } from "../imageComponents/ImageComponent";
+// import { ImageStyle } from "../imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
   background-color: #c4c4c4;
@@ -38,7 +38,7 @@ function RightContainer() {
     <RightContainerWrapper>
       <RightContainerBox>
         <ImageWrapper>
-          <ImageStyle src="/goge-africa/assets/img/light-img.png" />
+          {/* <ImageStyle src="/goge-africa/assets/img/light-img.png" /> */}
         </ImageWrapper>
         <DescriptionWrapper>
           <Typography variant="bodySmallTwo">
@@ -47,7 +47,7 @@ function RightContainer() {
           </Typography>
         </DescriptionWrapper>
         <PrevNextWrapper>
-          <ImageStyle src="/goge-africa/assets/img/prev-next.png" />
+          {/* <ImageStyle src="/goge-africa/assets/img/prev-next.png" /> */}
         </PrevNextWrapper>
       </RightContainerBox>
     </RightContainerWrapper>

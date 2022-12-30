@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 
 const CollaborationContainer = styled.div`
@@ -19,7 +19,7 @@ function CollaborationComponent({ title, subtitle, imgURL }) {
   return (
     <CollaborationContainer>
       <ImageContainer>
-        <ImageComponent src={imgURL} />
+        {/* <ImageComponent src={imgURL} /> */}
       </ImageContainer>
       <HeroRedComponent title={title} subtitle={subtitle} />
     </CollaborationContainer>

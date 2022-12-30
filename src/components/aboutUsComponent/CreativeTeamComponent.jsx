@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 
 const CreativeTeam = styled.div`
@@ -23,7 +23,7 @@ function CreativeTeamComponent({ title, subtitle, imgURL }) {
     <CreativeTeam>
       <HeroRedComponent title={title} subtitle={subtitle} />
       <ImageContainer>
-        <ImageComponent src={imgURL} />
+        {/* <ImageComponent src={imgURL} /> */}
       </ImageContainer>
     </CreativeTeam>
   );

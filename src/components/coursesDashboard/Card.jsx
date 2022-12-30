@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageComponent from "../imageComponents/ImageComponent";
+// import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 
 
@@ -35,7 +35,7 @@ function Card({ imgURL, courseName }) {
   return (
     <CardContainer>
       <ImageContainer>
-        <ImageComponent src={imgURL} />
+        {/* <ImageComponent src={imgURL} /> */}
       </ImageContainer>
 
       <DetailContainer>

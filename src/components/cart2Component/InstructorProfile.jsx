@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Typography } from "components/Typography"
-import { AvatarImage } from "../imageComponents/ImageComponent";
+// import { AvatarImage } from "../imageComponents/ImageComponent";
 
 
 const InstructorProfileWrapper = styled.div`
@@ -53,10 +53,10 @@ function InstructorProfile() {
               Instructor
             </Typography>
             <ImageWrapper>
-              <AvatarImage
+              {/* <AvatarImage
                 src="/assets/img/avatar-image1.png"
                 alt="instructor avatar "
-              />
+              /> */}
             </ImageWrapper>
 
             <Typography
