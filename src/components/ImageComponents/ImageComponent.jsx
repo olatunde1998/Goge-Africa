@@ -11,7 +11,7 @@ export const AvatarImage = styled(ImageStyle)`
   border-radius: 50%;
 `;
 
-function ImageComponent({ src }) {
+function ImageComponent({src}) {
   return <ImageStyle src={src} alt="This is the advert" />;
 }
 

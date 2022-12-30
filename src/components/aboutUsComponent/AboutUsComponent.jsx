@@ -9,8 +9,6 @@ import CreativeTeamComponent from "components/aboutUsComponent/CreativeTeamCompo
 import LetBuildComponent from "components/aboutUsComponent/LetBuildComponent";
 
 
-
-
 const AboutUsWrapper = styled.div`
 
 `
