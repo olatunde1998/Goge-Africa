@@ -18,13 +18,13 @@ const ImageContainer = styled.div`
   }
 `;
 
-function LetBuildComponent({ title, subtitle, imgURL }) {
+function LetBuildComponent({ title, subtitle}) {
   return (
     <LetBuildContainer>
       <HeroComponent title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
-        <ImageStyle src={imgURL}/>
+        <ImageStyle src="/assets/img/let-build-image.png"/>
       </ImageContainer>
     </LetBuildContainer>
   );
