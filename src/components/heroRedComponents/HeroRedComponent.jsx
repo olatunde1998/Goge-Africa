@@ -1,3 +1,4 @@
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedTexts from "./HeroRedText";
@@ -21,6 +22,7 @@ function HeroRedComponent({ title, subtitle, imgURL }) {
       <HeroRedTexts title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
     </HeroContainer>
   );

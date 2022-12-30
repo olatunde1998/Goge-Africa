@@ -19,7 +19,7 @@ function AboutUsComponent() {
       <HeroRedComponent
         title="We're Goge Africa An E-Learning Platform From West Africa"
         subtitle="We are at your call. We serve you always."
-        imgURL="/goge-africa/assets/img/about-us-Image1.png"
+        imgURL="/assets/img/about-us-Image1.png"
       />
       <CollaborationComponent
         title="We're Goge Africa"
@@ -27,7 +27,7 @@ function AboutUsComponent() {
         programs and resources for individual, Advertising & Media Specialist, Online Marketing 
         Professionals, Freelancers and anyone looking to pursue a career in digital marketing, 
         Accounting, web development, programming,Multimedia and CAD design"
-        imgURL="/goge-africa/assets/img/about-us-Image2.png"
+        imgURL="/assets/img/about-us-Image2.png"
       />
       <ProfessionalSupportComponent
         title="Professional Support"
@@ -35,7 +35,7 @@ function AboutUsComponent() {
         programs and resources for individual, Advertising & Media Specialist, Online Marketing 
         Professionals, Freelancers and anyone looking to pursue a career in digital marketing, 
         Accounting, web development, programming,Multimedia and CAD design"
-        imgURL="/goge-africa/assets/img/about-us-Image3.png"
+        imgURL="/assets/img/about-us-Image3.png"
       />
       <TestimonyComponent/>
       <CreativeTeamComponent
@@ -44,7 +44,7 @@ function AboutUsComponent() {
         programs and resources for individual, Advertising & Media Specialist, Online Marketing 
         Professionals, Freelancers and anyone looking to pursue a career in digital marketing, 
         Accounting, web development, programming,Multimedia and CAD design"
-        imgURL="/goge-africa/assets/img/creative-team-image.png"
+        imgURL="/assets/img/creative-team-image.png"
       />
       <LetBuildComponent
         title="Let's Build Something Great Together"
