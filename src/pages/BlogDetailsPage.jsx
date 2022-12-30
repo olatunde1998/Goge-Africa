@@ -3,7 +3,7 @@ import NavigationComponent from "components/navigationComponents/NavigationCompo
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import FooterComponent from "components/footerComponents/FooterComponent";
 import { Typography } from "components/Typography";
-import ImageComponent from ".././components/imageComponents/ImageComponent";
+// import ImageComponent from ".././components/imageComponents/ImageComponent";
 import CommentComponent from "components/commentComponent/CommentComponent";
 import CommentFormComponent from "components/commentComponent/CommentFormComponent";
 
@@ -96,7 +96,7 @@ function BlogDetailsPage() {
           rented for as few as two people.
         </Typography>
         <BlogImageContainer>
-          <ImageComponent src="/goge-africa/assets/img/blogDetailPage-image2.png" />
+          {/* <ImageComponent src="/goge-africa/assets/img/blogDetailPage-image2.png" /> */}
         </BlogImageContainer>
         <Typography variant="bodySmallThree">
           Luxury is something everyone deserves from time to time, such an
@@ -150,7 +150,6 @@ function BlogDetailsPage() {
         />
       </CommentWrapper>
       <CommentFormComponent />
-
       <FooterComponent />
     </BlogDetailsPageWrapper>
   );
