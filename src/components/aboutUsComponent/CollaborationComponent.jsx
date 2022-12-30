@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const CollaborationContainer = styled.div`
   @media (min-width: 768px) {
@@ -20,6 +21,7 @@ function CollaborationComponent({ title, subtitle, imgURL }) {
     <CollaborationContainer>
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
       <HeroRedComponent title={title} subtitle={subtitle} />
     </CollaborationContainer>

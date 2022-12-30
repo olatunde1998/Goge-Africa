@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const CreativeTeam = styled.div`
   background-color: #FFF7DF;
@@ -24,6 +25,7 @@ function CreativeTeamComponent({ title, subtitle, imgURL }) {
       <HeroRedComponent title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
     </CreativeTeam>
   );

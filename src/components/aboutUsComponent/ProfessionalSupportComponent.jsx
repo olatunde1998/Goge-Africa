@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const ProfessionalSupportContainer = styled.div`
   margin-top: 50px;
@@ -23,6 +24,7 @@ function ProfessionalSupportComponent({ title, subtitle, imgURL }) {
       <HeroRedComponent title={title} subtitle={subtitle} />
       <ImageContainer>
         {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
     </ProfessionalSupportContainer>
   );
