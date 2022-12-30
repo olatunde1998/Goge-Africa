@@ -1,9 +1,9 @@
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-// import { ImageStyle } from "../imageComponents/ImageComponent";
 
 const RightContainerWrapper = styled.div`
-  background-image: url("/goge-africa/assets/img/wes-hicks-4-EeTnaC1S4-unsplash.jpg");
+  background-image: url("/assets/img/wes-hicks-4-EeTnaC1S4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -37,7 +37,7 @@ function RightContainer() {
     <RightContainerWrapper>
       <RightContainerBox>
       <ImageWrapper>
-        {/* <ImageStyle src="/goge-africa/assets/img/light-img.png" /> */}
+        <PictureStyle src="/assets/img/light-img.png"/>
       </ImageWrapper>
       <DescriptionWrapper>
         <Typography variant="bodySmallTwo">
@@ -46,7 +46,7 @@ function RightContainer() {
         </Typography>
       </DescriptionWrapper>
       <PrevNextWrapper>
-        {/* <ImageStyle src="/goge-africa/assets/img/prev-next.png" /> */}
+        <PictureStyle src="/assets/img/prev-next.png"/>
       </PrevNextWrapper>
       </RightContainerBox>
     </RightContainerWrapper>

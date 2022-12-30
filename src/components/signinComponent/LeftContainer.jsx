@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import { ImageStyle } from "../imageComponents/ImageComponent";
 import SigninForm from "components/signinComponent/SigninForm";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const LeftContentWrapper = styled.div`
   @media (min-width: 768px) {
@@ -26,6 +27,7 @@ function LeftContainer() {
     <LeftContentWrapper>
       <ImageWrapper>
         {/* <ImageStyle src="/goge-africa/assets/img/Logo.png" /> */}
+        <PictureStyle src="/assets/img/Logo.png"/>
       </ImageWrapper>
       <FormHeading>Sign in to your account to continue</FormHeading>
       <SigninForm />

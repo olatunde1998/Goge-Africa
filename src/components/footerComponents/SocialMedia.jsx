@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -8,6 +7,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const SocialMediaWrapper = styled.div``;
 const ImageWrapper = styled.div`
@@ -35,7 +35,7 @@ function SocialMedia() {
   return (
     <SocialMediaWrapper>
       <ImageWrapper>
-        {/* <ImageComponent src="assets/img/Logo.png" /> */}
+        <PictureStyle src="assets/img/Logo.png"/>
       </ImageWrapper>
       <SocialDetails>
         <Typography variant="footerSmall">

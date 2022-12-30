@@ -1,7 +1,7 @@
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import { Link } from "react-router-dom";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 
 const CartCardContainer = styled.div`
@@ -36,7 +36,7 @@ function CartCard({ imgURL, courseName }) {
     <CartCardContainer>
       <ImageContainer>
         <Link to="/cart" style={{ textDecoration: "none" }}>
-        {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
 
         </Link>
 

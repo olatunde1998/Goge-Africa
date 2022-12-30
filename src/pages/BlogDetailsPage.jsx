@@ -6,6 +6,7 @@ import { Typography } from "components/Typography";
 // import ImageComponent from ".././components/imageComponents/ImageComponent";
 import CommentComponent from "components/commentComponent/CommentComponent";
 import CommentFormComponent from "components/commentComponent/CommentFormComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const BlogDetailsPageWrapper = styled.div``;
 const BlogImageContainer = styled.div`
@@ -33,7 +34,7 @@ function BlogDetailsPage() {
       <HeroRedComponent
         title="How To; Have A Good Music Listening Ear"
         subtitle="19 Augs, 2019 -by Tommy Lang"
-        imgURL="/goge-africa/assets/img/blogDetailPage-image1.png"
+        imgURL="/assets/img/blogDetailPage-image1.png"
       />
       <BlogFullText>
         <Typography variant="bodySmallThree">
@@ -97,6 +98,7 @@ function BlogDetailsPage() {
         </Typography>
         <BlogImageContainer>
           {/* <ImageComponent src="/goge-africa/assets/img/blogDetailPage-image2.png" /> */}
+          <PictureStyle src="/assets/img/blogDetailPage-image2.png" />
         </BlogImageContainer>
         <Typography variant="bodySmallThree">
           Luxury is something everyone deserves from time to time, such an
@@ -119,7 +121,7 @@ function BlogDetailsPage() {
       <CommentWrapper>
         <Typography variant="headingNormal">4 Comment</Typography>
         <CommentComponent
-          src="/goge-africa/assets/img/avatar-image1.png"
+          src="/assets/img/avatar-image1.png"
           commentInfo="With your budget in mind, it is easy to plan a chartered yacht
           vacation. Companies often have a fleet of sailing vessels that can be
           accommodate parties of various sizes."
@@ -127,21 +129,21 @@ function BlogDetailsPage() {
           commentDate="35 mins ago, 15 November 2019"
         />
         <CommentComponent
-          src="/goge-africa/assets/img/avatar-image2.png"
+          src="/assets/img/avatar-image2.png"
           commentInfo="With your budget in mind, it is easy to plan a chartered yacht
           vacation. Companies often have "
           reply="Reply"
           commentDate="35 mins ago, 15 November 2019"
         />
         <CommentComponent
-          src="/goge-africa/assets/img/avatar-image3.png"
+          src="/assets/img/avatar-image3.png"
           commentInfo="With your budget in mind, it is easy to plan a chartered yacht
           vacation. Companies often have."
           reply="Reply"
           commentDate="35 mins ago, 15 November 2019"
         />
         <CommentComponent
-          src="/goge-africa/assets/img/avatar-image4.png"
+          src="/assets/img/avatar-image4.png"
           commentInfo="With your budget in mind, it is easy to plan a chartered yacht
           vacation. Companies often have a fleet of sailing vessels that can be
           accommodate parties of various sizes."

@@ -40,7 +40,7 @@ function ContactUsComponent() {
       <HeroRedComponent
         title="24hrs On Deck Customer Support"
         subtitle="We are at your call. We serve you always."
-        imgURL="/goge-africa/assets/img/contactPage-img.png"
+        imgURL="/assets/img/contactPage-img.png"
       />
       <MessageFormContainer>
         <LetTalkWrapper>

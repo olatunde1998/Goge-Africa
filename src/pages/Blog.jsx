@@ -11,7 +11,7 @@ function Blog() {
       <HeroRedComponent
         title="Welcome to Our Forever Updated Blog Post!"
         subtitle="Be informed! Never miss a Single post"
-        imgURL="/goge-africa/assets/img/blogPage-img.png"
+        imgURL="/assets/img/blogPage-img.png"
       />
       <CardComponentList/>
       <FooterComponent />

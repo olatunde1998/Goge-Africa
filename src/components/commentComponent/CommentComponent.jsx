@@ -1,6 +1,6 @@
+import { AvatarPicture } from "components/pictureComponent/PictureComponent";
 import { Typography } from "components/Typography";
 import styled from "styled-components";
-// import { AvatarImage } from "../imageComponents/ImageComponent";
 
 const CommentComponentWrapper = styled.div`
   border: 0.5px solid grey;
@@ -15,11 +15,7 @@ const CommentInfo = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  vertical-align: middle;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: grey;
+
 `;
 const CommentDate = styled.div`
   display: flex;
@@ -31,7 +27,7 @@ function CommentComponent({ src, commentInfo, commentDate, reply }) {
   return (
     <CommentComponentWrapper>
       <ImageContainer>
-        {/* <AvatarImage src={src} /> */}
+        <AvatarPicture src={src}/>
       </ImageContainer>
       <CommentInfo>
         <Typography variant="bodySmallThree">{commentInfo}</Typography>

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Typography } from "components/Typography"
+import { AvatarPicture } from "components/pictureComponent/PictureComponent";
 // import { AvatarImage } from "../imageComponents/ImageComponent";
 
 
@@ -24,12 +25,12 @@ border: 1px solid grey;
 
 
 const ImageWrapper = styled.div`
-  border: 2px solid grey;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: grey;
-  margin: 0 auto;
+  // border: 2px solid grey;
+  // width: 100px;
+  // height: 100px;
+  // border-radius: 50%;
+  // background: grey;
+  // margin: 0 auto;
 `;
 const InstructorAchievement = styled.div`
   max-width: 260px;
@@ -57,6 +58,7 @@ function InstructorProfile() {
                 src="/assets/img/avatar-image1.png"
                 alt="instructor avatar "
               /> */}
+              <AvatarPicture src="/assets/img/avatar-image1.png" />
             </ImageWrapper>
 
             <Typography

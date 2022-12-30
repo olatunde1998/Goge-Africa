@@ -3,9 +3,13 @@ import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const CollaborationContainer = styled.div`
+display: flex;
+flex-direction: column-reverse;
+margin-top: 50px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
+    flex-direction: row;
   }
 `;
 

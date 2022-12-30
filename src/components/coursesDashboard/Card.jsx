@@ -7,7 +7,6 @@ const CardContainer = styled.div`
   width: 150px;
   margin: 2px 5px 20px 2px;
   @media (min-width: 768px) {
-  width: 200px;  
   margin: 20px 2px 10px 20px;
 
   }

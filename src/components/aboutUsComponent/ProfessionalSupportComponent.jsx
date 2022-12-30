@@ -5,9 +5,11 @@ import { PictureStyle } from "components/pictureComponent/PictureComponent";
 const ProfessionalSupportContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
+    
   }
 `;
 
