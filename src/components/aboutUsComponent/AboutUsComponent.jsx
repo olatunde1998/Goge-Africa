@@ -50,7 +50,7 @@ function AboutUsComponent() {
         title="Let's Build Something Great Together"
         subtitle="Semaj africa is an online education platform that delivers videos courses, 
         programs and resources for individual"
-        imgURL="/goge-africa/assets/img/let-build-image.png"
+        imgURL="/assets/img/let-build-image.png"
       />
       <FooterComponent />
 
