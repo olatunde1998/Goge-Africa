@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import { AvatarImage } from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
 import SettingForm from "components/coursesDashboard/SettingsForm";
+import { AvatarPicture } from "components/pictureComponent/PictureComponent";
 
 const OrderDashboardWrapper = styled.div`
   margin-bottom: 100px;
@@ -28,11 +29,11 @@ const FreePremium = styled.div`
   justify-content: space-between;
 `;
 const AvatarImageWrapper = styled.div`
-  border: 2px solid grey;
-  max-width: 50px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background: white;
+  // border: 2px solid grey;
+  // max-width: 50px;
+  // margin: 0 auto;
+  // border-radius: 50%;
+  // background: white;
 `;
 
 function SettingsComponent() {
@@ -49,6 +50,7 @@ function SettingsComponent() {
         </FreePremium>
         <AvatarImageWrapper>
           {/* <AvatarImage src="assets/img/card-image1.png" /> */}
+          <AvatarPicture src="assets/img/card-image1.png" />
         </AvatarImageWrapper>
         <SettingForm />
       </OrderDashboardBox>

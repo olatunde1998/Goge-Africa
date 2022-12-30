@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
-// import { ImageStyle } from "../imageComponents/ImageComponent";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 const DetailsWrapper = styled.div`
   border: 0.4px solid grey;
@@ -36,6 +36,7 @@ function OrderList({ imgURL, courseName, category, status, teacher, date }) {
       <OrderImageAvatar>
         <AvatarWrapper>
           {/* <ImageStyle src={imgURL} alt="photographer pics" /> */}
+          <PictureStyle src={imgURL}/>
         </AvatarWrapper>
         <Typography variant="bodySmallThree">{courseName}</Typography>
       </OrderImageAvatar>

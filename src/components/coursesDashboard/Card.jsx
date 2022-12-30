@@ -1,6 +1,6 @@
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import { Typography } from "components/Typography";
+import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
 
 const CardContainer = styled.div`
@@ -35,7 +35,7 @@ function Card({ imgURL, courseName }) {
   return (
     <CardContainer>
       <ImageContainer>
-        {/* <ImageComponent src={imgURL} /> */}
+        <PictureStyle src={imgURL}/>
       </ImageContainer>
 
       <DetailContainer>

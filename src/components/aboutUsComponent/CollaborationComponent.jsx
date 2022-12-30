@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
@@ -20,7 +19,6 @@ function CollaborationComponent({ title, subtitle, imgURL }) {
   return (
     <CollaborationContainer>
       <ImageContainer>
-        {/* <ImageComponent src={imgURL} /> */}
         <PictureStyle src={imgURL}/>
       </ImageContainer>
       <HeroRedComponent title={title} subtitle={subtitle} />

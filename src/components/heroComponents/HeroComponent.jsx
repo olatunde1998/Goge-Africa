@@ -1,7 +1,6 @@
 import HeroTexts from "components/heroComponents/HeroText";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 
 const HeroContainer = styled.div`
   @media (min-width: 768px) {
@@ -21,7 +20,6 @@ function HeroComponent({ title, subtitle, imgURL }) {
     <HeroContainer>
       <HeroTexts title={title} subtitle={subtitle} />
       <ImageContainer>
-        {/* <ImageComponent src={imgURL} /> */}
         <PictureStyle src={imgURL}/>
       </ImageContainer>
     </HeroContainer>

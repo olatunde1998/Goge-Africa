@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import ImageComponent from "../imageComponents/ImageComponent";
 import HeroRedComponent from "components/heroRedComponents/HeroRedComponent";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
 
@@ -23,7 +22,6 @@ function ProfessionalSupportComponent({ title, subtitle, imgURL }) {
     <ProfessionalSupportContainer>
       <HeroRedComponent title={title} subtitle={subtitle} />
       <ImageContainer>
-        {/* <ImageComponent src={imgURL} /> */}
         <PictureStyle src={imgURL}/>
       </ImageContainer>
     </ProfessionalSupportContainer>
