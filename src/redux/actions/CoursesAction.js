@@ -20,7 +20,7 @@ export function fetchCourses(){
     return async (dispatch)=>{
         dispatch(getCourses())
         try {
-            const response = await fetch("http://localhost:1337/api/courses/?populate=*")
+            const response = await fetch("https://goge-africaa-backend.onrender.com/api/courses/?populate=*")
             const data = await response.json()
             console.log(data, "DATA");
             dispatch(getCoursesSuccess(data))
