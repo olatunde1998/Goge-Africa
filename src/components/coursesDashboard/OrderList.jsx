@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
 import { PictureStyle } from "components/pictureComponent/PictureComponent";
+import { Link } from "react-router-dom";
 
 const DetailsWrapper = styled.div`
   border: 0.4px solid grey;
@@ -32,10 +33,10 @@ const OrderInfo = styled.div`
 
 function OrderList({ imgURL, courseName, category, status, teacher, date }) {
   return (
+    <Link to="/settings" style={{ textDecoration: "none" }}>
     <DetailsWrapper>
       <OrderImageAvatar>
         <AvatarWrapper>
-          {/* <ImageStyle src={imgURL} alt="photographer pics" /> */}
           <PictureStyle src={imgURL}/>
         </AvatarWrapper>
         <Typography variant="bodySmallThree">{courseName}</Typography>
@@ -47,6 +48,7 @@ function OrderList({ imgURL, courseName, category, status, teacher, date }) {
         <Typography variant="bodySmallThree">{date}</Typography>
       </OrderInfo>
     </DetailsWrapper>
+    </Link>
   );
 }
 

@@ -1,6 +1,7 @@
 import { Button } from "components/passwordComponent/ButtonComponent";
 import { Input } from "components/signinComponent/InputComponent";
 import { Typography } from "components/Typography";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SubscribeWrapper = styled.div`
@@ -68,7 +69,8 @@ function Subscribe() {
         <Input type="email" placeholder="Email"/>
         </EmailInputWrapper>
         <ButtonWrapper>
-        <Button>Submit</Button>
+        <Button>  <Link to="#" style={{ textDecoration: "none", color: "white" }}>
+         Submit</Link></Button>
         </ButtonWrapper>
       </SubscribeEmail>
       </SubscribeContainer>

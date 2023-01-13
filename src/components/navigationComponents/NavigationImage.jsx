@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavImageWrapper = styled.div`
@@ -17,7 +18,9 @@ const NavigationImg = styled.img`
 function NavigationImage() {
   return (
     <NavImageWrapper>
-      <NavigationImg src="/assets/img/Logo.png" />
+      <Link to="/home" style={{ textDecoration: "none" }}>
+        <NavigationImg src="/assets/img/Logo.png" />
+      </Link>
     </NavImageWrapper>
   );
 }

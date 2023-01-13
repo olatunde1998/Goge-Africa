@@ -15,7 +15,7 @@ const NavigationListContainer = styled.div`
 function NavigationList() {
   return (
     <NavigationListContainer>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/home" style={{ textDecoration: "none" }}>
         <Typography variant="bodySmall">Home</Typography>
       </Link>
       <Link to="/courses" style={{ textDecoration: "none" }}>

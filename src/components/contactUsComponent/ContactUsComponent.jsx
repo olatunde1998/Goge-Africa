@@ -49,17 +49,21 @@ function ContactUsComponent() {
             We do Normally get back within 48hours. Please leave a message.
           </Typography>
         </LetTalkWrapper>
+        <form
+        method="POST"
+        action="https://getform.io/f/b0ec8305-c728-4db5-ae28-b7ddf75c56cb"
+      >
         <InputWrapper>
-          <InputFieldComponent placeholder="FullName" />
-          <InputFieldComponent placeholder="Country/Region" />
-          <InputFieldComponent placeholder="Street Address" />
-          <InputFieldComponent placeholder="City" />
-          <InputFieldComponent placeholder="Your Message" />
-          <Input heighty placeholder="textarea" />
+          <InputFieldComponent placeholder="FullName" name="name"/>
+          <InputFieldComponent placeholder="Country/Region"name="country" />
+          <InputFieldComponent placeholder="Street Address"name="region" />
+          <InputFieldComponent placeholder="City"name="city" />
+          <Input heighty placeholder="type here ..." name="message"/>
         </InputWrapper>
         <ButtonWrapper>
           <LargeButtonContainer>Send Message</LargeButtonContainer>
         </ButtonWrapper>
+        </form>
       </MessageFormContainer>
       <FooterComponent />
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
+import { Link } from "react-router-dom";
 
 const CartHeroWrapper = styled.div`
   background-color: #ff8a00;
@@ -42,8 +43,16 @@ function CartHero() {
           </Typography>
         </CartHeroText>
         <ButtonWrapper>
-          <Button>Become Premium</Button>
-          <Button>Add to Cart</Button>
+          <Button>
+            <Link to="#" style={{ textDecoration: "none" }}>
+              Become Premium
+            </Link>
+          </Button>
+          <Button>
+            <Link to="#" style={{ textDecoration: "none" }}>
+            Add to Cart
+            </Link>
+          </Button>
         </ButtonWrapper>
       </CartHeroBox>
     </CartHeroWrapper>

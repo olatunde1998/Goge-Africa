@@ -8,8 +8,8 @@ const TestimonyListWrapper = styled.div`
 function TestimonyList({ rating, comment }) {
   return (
     <TestimonyListWrapper>
-      <Typography variant="headingsMedium">{rating}</Typography>
-      <Typography variant="bodySmallFour">{comment}</Typography>
+      <Typography variant="headingsMedium" style={{lineHeight:"2px"}}>{rating}</Typography>
+      <Typography variant="bodySmallFour" style={{textAlign:"center"}}>{comment}</Typography>
     </TestimonyListWrapper>
   );
 }

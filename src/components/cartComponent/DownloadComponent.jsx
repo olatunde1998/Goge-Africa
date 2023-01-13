@@ -56,11 +56,14 @@ function DownloadComponent() {
             for checkout to view offline
           </Typography>
         </DownloadText>
-        <Link to="/cart/2" style={{ textDecoration: "none" }}>
-          <ButtonWrapper>
-            <Button>Download</Button>
-          </ButtonWrapper>
-        </Link>
+        <ButtonWrapper>
+          <Button>
+            {" "}
+            <Link to="/cart/2" style={{ textDecoration: "none", color: "white" }}>
+              Download
+            </Link>
+          </Button>
+        </ButtonWrapper>
       </DownloadBox>
     </DownloadComponentWrapper>
   );
