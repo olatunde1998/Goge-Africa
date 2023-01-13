@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Typography } from "components/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFacebook } from 'react-icons/fa';
 import {
-  faFacebook,
+  // faFacebook,
   faLinkedin,
   faTwitter,
   faYoutube,
@@ -19,7 +20,17 @@ const SocialIconItem = styled.div`
   height: 20px;
   width: 1.5rem;
   margin-right: 20px;
-  background-color: white;
+  // background-color: white;
+  // border: 2px solid red;
+  border-radius: 40px;
+  // padding: 8px;
+  padding-left: 8px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+
+  align-items: center;
+  vertical-align: middle;
   
 `;
 const SocialIconWrapper = styled.div`
@@ -45,24 +56,25 @@ function SocialMedia() {
         </Typography>
       </SocialDetails>
       <SocialIconWrapper>
-        <SocialIconItem>
+        <SocialIconItem style={{backgroundColor: "white"}}>
           <a href="www.facebook.com">
-            <FontAwesomeIcon icon={faFacebook} />
+            {/* <FontAwesomeIcon icon={faFacebook} /> */}
+            <FaFacebook style={{fontSize: "28px", color: "blue"}}/>
           </a>
         </SocialIconItem>
-        <SocialIconItem>
+        <SocialIconItem style={{backgroundColor: "skyblue"}}>
           <a href="www.facebook.com">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faTwitter} style={{fontSize: "24px", color:"white"}} />
           </a>
         </SocialIconItem>
-        <SocialIconItem>
+        <SocialIconItem style={{backgroundColor: "red"}}>
           <a href="www.facebook.com">
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faYoutube} style={{fontSize: "24px", color: "white"}} />
           </a>
         </SocialIconItem>
-        <SocialIconItem>
+        <SocialIconItem style={{backgroundColor: "blue"}}>
           <a href="www.facebook.com">
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} style={{fontSize: "24px", color:"white"}} />
           </a>
         </SocialIconItem>
       </SocialIconWrapper>
