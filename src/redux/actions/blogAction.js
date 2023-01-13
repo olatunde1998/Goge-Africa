@@ -20,7 +20,8 @@ export function fetchBlogs(){
     return async (dispatch)=>{
         dispatch(getBlogs())
         try {
-            const response = await fetch("http://localhost:1337/api/blog-articles/?populate=*")
+            // const response = await fetch("http://localhost:1337/api/blog-articles/?populate=*")
+            const response = await fetch("https://goge-africaa-backend.onrender.com/api/blog-articles/?populate=*")
             const data = await response.json()
             dispatch(getBlogsSuccess(data))
         } catch (error) {

@@ -30,7 +30,8 @@ function CardComponentList({ dispatch, loading, blogsData, hasError }) {
                 return (
                   <Card
                     key={idx}
-                    imgURL={`http://localhost:1337${url}`}
+                    // imgURL={`http://localhost:1337${url}`}
+                    imgURL={`https://goge-africaa-backend.onrender.com${url}`}
                     author={blogData.attributes.author}
                     description={blogData.attributes.content}
                     date={blogData.attributes.date}

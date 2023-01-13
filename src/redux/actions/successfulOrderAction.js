@@ -20,7 +20,8 @@ export function fetchSuccessOrder(){
     return async (dispatch)=>{
         dispatch(getSuccessful())
         try {
-            const response = await fetch("http://localhost:1337/api/orders/?populate=*")
+            // const response = await fetch("http://localhost:1337/api/orders/?populate=*")
+            const response = await fetch("https://goge-africaa-backend.onrender.com/api/orders/?populate=*")
             const data = await response.json()
             return dispatch(getSuccessfulSuccess(data))
         } catch (error) {
