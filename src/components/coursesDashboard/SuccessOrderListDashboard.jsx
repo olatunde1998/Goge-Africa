@@ -27,7 +27,8 @@ function SuccessfulOrderListDashboard({dispatch, successDatas, loading, hasError
             <OrderList
               key={idx}
               // imgURL={`http://localhost:1337${url}`}
-              imgURL={`https://goge-africaa-backend.onrender.com${url}`}
+              // imgURL={`https://goge-africaa-backend.onrender.com${url}`}
+              imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
               courseName={successData.attributes.order_details}
               category={successData.attributes.category}
               status={successData.attributes.status}
