@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { fetchBlogs } from "redux/actions/blogAction";
 import { connect } from "react-redux";
 
-
 const CardComponentListWrapper = styled.div`
   margin: 5rem 0;
 `;
@@ -17,33 +16,41 @@ function CardComponentList({ dispatch, loading, blogsData, hasError }) {
   useEffect(() => {
     dispatch(fetchBlogs());
   }, [dispatch]);
-  console.log(blogsData, "============kiii")
-  if(loading) return <p>Loading blogs .......</p>
-  if(hasError) return<p> Unable to display blogs !!!</p>
+  console.log(blogsData, "============kiii");
+  if (loading) return <p>Loading blogs .......</p>;
+  if (hasError) return <p> Unable to display blogs !!!</p>;
   return (
-          <CardComponentListWrapper>
-            {blogsData && blogsData.data &&
-              blogsData.data.map((blogData, idx) => {
-                const bgIndex = idx % bgColors.length;
-                const {attributes: {imageUrl: {data: {attributes: {url}}}}} = blogData
-    
-                return (
-                  <Card
-                    key={idx}
-                    // imgURL={`http://localhost:1337${url}`}
-                    imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
-                    // imgURL={`https://goge-africa-backend.onrender.com${url}`}
-                    author={blogData.attributes.author}
-                    description={blogData.attributes.content}
-                    date={blogData.attributes.date}
-                    headings={blogData.attributes.title}
-                    bg={bgColors[bgIndex]}
-                  />
-                );
-              })}
-          </CardComponentListWrapper>
-        );
-  
+    <CardComponentListWrapper>
+      {blogsData &&
+        blogsData.data &&
+        blogsData.data.map((blogData, idx) => {
+          const bgIndex = idx % bgColors.length;
+          const {
+            attributes: {
+              imageUrl: {
+                data: {
+                  attributes: { url },
+                },
+              },
+            },
+          } = blogData;
+
+          return (
+            <Card
+              key={idx}
+              // imgURL={`http://localhost:1337${url}`}
+              // imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
+              imgURL={`https://goge-africa-backend.onrender.com${url}`}
+              author={blogData.attributes.author}
+              description={blogData.attributes.content}
+              date={blogData.attributes.date}
+              headings={blogData.attributes.title}
+              bg={bgColors[bgIndex]}
+            />
+          );
+        })}
+    </CardComponentListWrapper>
+  );
 }
 const mapStateToProps = (state) => ({
   blogsData: state.blogs.blogs,
@@ -52,28 +59,6 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(CardComponentList);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function CardComponentList() {
 //   function strapiData(){

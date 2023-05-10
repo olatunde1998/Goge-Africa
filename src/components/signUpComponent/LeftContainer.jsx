@@ -8,6 +8,7 @@ const LeftContentWrapper = styled.div`
     margin-top: auto;
     padding: 0px;
     margin-bottom: auto;
+   
   }
 `;
 const FormHeading = styled.div`

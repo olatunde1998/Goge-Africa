@@ -22,7 +22,8 @@ export function fetchCourses(){
         try {
              // https://goge-africa-backend-production.up.railway.app/api/
             // const response = await fetch("http://localhost:1337/api/courses/?populate=*")
-            const response = await fetch("https://goge-africa-backend-production.up.railway.app/api/courses/?populate=*")
+            // const response = await fetch("https://goge-africa-backend-production.up.railway.app/api/courses/?populate=*")
+            const response = await fetch("https://goge-africa-backend.onrender.com/api/courses/?populate=*")
             // const response = await fetch("https://goge-africaa-backend.onrender.com/api/courses/?populate=*")
             const data = await response.json()
             console.log(data, "DATA");

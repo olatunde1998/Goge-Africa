@@ -15,6 +15,7 @@ import OrderSettings from "pages/OrderSettings";
 import Cart from "pages/Cart";
 import Cart2 from "pages/Cart2";
 import Payment from "pages/Payment";
+import NotFound from "pages/NotFound";
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
         <Route path="/cart/2" element={<Cart2 />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/" element={<AboutUsPage />} />
+        <Route path="*" element={<NotFound />} />
+
 
 
       </Routes>

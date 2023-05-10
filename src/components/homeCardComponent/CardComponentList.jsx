@@ -35,7 +35,8 @@ function CardComponentList({dispatch, coursesData, loading, hasError}) {
               key={idx}
               // imgURL={`http://localhost:1337${url}`}
               // imgURL={`https://goge-africaa-backend.onrender.com${url}`}
-              imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
+              imgURL={`https://goge-africa-backend.onrender.com${url}`}
+              // imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
 
               courseName={course.attributes.name}
             />

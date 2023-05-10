@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchCourses } from "redux/actions/CoursesAction";
 
-
 const CardComponentListWrapper = styled.div`
   margin: 0 auto;
   display: flex;
@@ -20,26 +19,35 @@ const CardComponentListWrapper = styled.div`
   }
 `;
 
-function CardComponentList({dispatch, coursesData, loading, hasError}) {
+function CardComponentList({ dispatch, coursesData, loading, hasError }) {
   useEffect(() => {
-    dispatch(fetchCourses())
-  }, [dispatch])
-  
-  if(loading) return <p>Loading Courses ......</p>
-  if(hasError)return<p>Unable to get the courses</p>
+    dispatch(fetchCourses());
+  }, [dispatch]);
+
+  if (loading) return <p>Loading Courses ......</p>;
+  if (hasError) return <p>Unable to get the courses</p>;
   return (
     <CardComponentListWrapper>
       {coursesData &&
         coursesData.data &&
         coursesData.data.map((course, idx) => {
-          const {attributes: {imageUrl: {data: {attributes: {url}}}}} = course
+          const {
+            attributes: {
+              imageUrl: {
+                data: {
+                  attributes: { url },
+                },
+              },
+            },
+          } = course;
           console.log(course.attributes.name);
           return (
             <Card
               key={idx}
               // imgURL={`http://localhost:1337${url}`}
               // imgURL={`https://goge-africaa-backend.onrender.com${url}`}
-              imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
+              // imgURL={`https://goge-africa-backend-production.up.railway.app${url}`}
+              imgURL={`https://goge-africa-backend.onrender.com${url}`}
               courseName={course.attributes.name}
             />
           );
@@ -48,37 +56,13 @@ function CardComponentList({dispatch, coursesData, loading, hasError}) {
   );
 }
 
-
 const mapStateToProps = (state) => ({
   coursesData: state.courses.courses,
   loading: state.courses.loading,
   hasError: state.courses.hasError,
 });
 
-export default connect(mapStateToProps)(CardComponentList) ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default connect(mapStateToProps)(CardComponentList);
 
 // function CardComponentList() {
 //   function courseData() {
@@ -111,7 +95,5 @@ export default connect(mapStateToProps)(CardComponentList) ;
 //     </CardComponentListWrapper>
 //   );
 // }
-
-
 
 // export default CardComponentList;

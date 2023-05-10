@@ -16,6 +16,7 @@ const FormWrapper = styled.div`
   padding-right: 10px;
   @media(min-width: 768px){
     max-width: 500px;
+
   }
 `;
 const TypoWrapper = styled.div`
